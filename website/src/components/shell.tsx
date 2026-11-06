@@ -32,7 +32,7 @@ function Header() {
       <div className="flex items-center gap-6">
         <Link href="/" className="flex items-center gap-2.5">
           <BrandMark size={26} />
-          <span className="font-display text-[14px] font-semibold tracking-[-0.06em]">cracked<span className="text-primary">_</span></span>
+          <span className="text-[15px] font-semibold tracking-[-0.02em]">cracked</span>
         </Link>
         <nav className="hidden items-center gap-1 sm:flex">
           <Link href="/#the-skills" className={`${btn.base} ${btn.ghost}`}>Skills</Link>
