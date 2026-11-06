@@ -22,6 +22,7 @@
     "job-search"
   ],
   "skills": [
+    "./skills/core/setup-cracked",
     "./skills/core/cracked-profile"
   ]
 }
