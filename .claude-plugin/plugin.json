@@ -34,6 +34,7 @@
     "./skills/interview/defend-my-project",
     "./skills/profile/roast-my-resume",
     "./skills/profile/jd-match",
-    "./skills/profile/resume-blueprint"
+    "./skills/profile/resume-blueprint",
+    "./skills/profile/github-glowup"
   ]
 }
