@@ -22,6 +22,7 @@
     "job-search"
   ],
   "skills": [
-    "./skills/core/cracked-profile"
+    "./skills/core/cracked-profile",
+    "./skills/core/company-intel"
   ]
 }
