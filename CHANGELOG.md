@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.1] - 2026-11-06
+
+### Fixed
+- `/offer-decode`: India rules updated to **FY 2026-27**, with the source and the date checked; the old regime is now computed properly (HRA exemption, 80C); the invented "~70% variable" rule is replaced with 0/70/100% scenarios labelled as an assumption; the labour-code wage definition (in force from 21 Nov 2025) is explained and offered as an option rather than asserted.
+- `/referral-dm`: connection notes now default to ≤ 200 characters (300 offered as a Premium variant, with source and date), plus the blank-request-then-DM path for free accounts.
+- Date-bound text: no hard-coded graduation year in templates; skills get today's date from the shell instead of assuming it.
+
+### Added
+- `skills/strategy/offer-decode/scripts/ctc.py`: a deterministic CTC → in-hand calculator (rules per financial year, both regimes, 87A marginal relief, PF capped or full, basic or labour-code wage base) with a 7-case hand-checked `--self-test`.
+- Eval grader: `/offer-decode` must run the calculator. The `offer-decode-india` and `referral-hiring-post` evals were re-run and pass.
+
 ## [1.2.0] - 2026-11-06
 
 ### Fixed
@@ -39,6 +50,7 @@ First public release.
 - Claude Code plugin and marketplace manifests; Codex metadata for every skill.
 - Structural validator, CI workflow, and a behavioural eval suite.
 
+[1.2.1]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.1
 [1.2.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.0
 [1.1.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.1.0
 [1.0.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.0.0

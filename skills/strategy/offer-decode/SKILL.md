@@ -22,7 +22,7 @@ For each offer, build this table (annual and monthly):
 
 Categories:
 - **Fixed cash**: basic, HRA, special allowance, other fixed allowances
-- **Variable**: performance bonus. Note the *target* % and whether it's guaranteed; treat non-guaranteed variable as ~70% expected unless the company states otherwise.
+- **Variable**: performance bonus. Note the *target* % and whether it's guaranteed. Ask the user for the company's historical payout. If it's unknown, show 0%, 70% and 100% payout side by side and label it an assumption (the calculator does this).
 - **One-time**: joining/sign-on bonus, relocation. Check for clawbacks ("repayable if you leave within 12 months").
 - **Deferred / equity**: ESOPs, RSUs. Note the vesting schedule, cliff, strike price (ESOPs), and liquidity (private company ESOPs may never be sellable).
 - **Benefits counted in CTC**: employer PF, gratuity, insurance premiums, meal cards, NPS. These are real money but **not in-hand cash**.
@@ -33,12 +33,12 @@ Show both. The headline CTC is neither.
 
 ## 2. Estimate in-hand
 
-For India, use [INDIA-CTC.md](INDIA-CTC.md). For other countries, estimate with the main tax and social-security components (e.g. US: federal + state + FICA, 401k if stated), and say which ones you included.
+For India, use [INDIA-CTC.md](INDIA-CTC.md) and run the calculator rather than doing the maths yourself: `python3 scripts/ctc.py --fixed <annual fixed> --variable <annual bonus> --regime both [--rent <annual rent> --metro] [--pt <professional tax>] [--pf capped|full] [--wage-rule basic|labour-code]`. Paste its table. If you change an assumption, rerun it. For other countries, estimate with the main tax and social-security components (e.g. US: federal + state + FICA, 401k if stated), and say which ones you included.
 
 Rules:
 - **Tax rules change every year.** If you have a web tool, verify the current slabs for the relevant financial year before computing. If not, use the reference values, name the year they're from, and say so clearly.
 - Show the calculation step by step, and state every assumption (tax regime, PF on full basic vs capped, professional-tax state, rent).
-- Run arithmetic with the shell (`python3 -c` or `bc`) rather than in your head, and show the result.
+- Run arithmetic with the calculator or the shell, never in your head, and show the result.
 - End with a **monthly in-hand estimate as a range** (e.g. ₹1.02–1.06 L), not false precision.
 
 ## 3. Red flags and fine print

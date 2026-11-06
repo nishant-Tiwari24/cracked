@@ -37,7 +37,7 @@ contact:  <email> · linkedin.com/in/<x>
 ```
 ```bash
 $ cat now.txt
-<what you're working on or looking for: "Open to SDE-1 roles from June 2026">
+<what you're working on or looking for: "Open to SDE-1 roles from <month year>">
 ```
 ````
 

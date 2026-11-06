@@ -28,7 +28,7 @@ Score and comment on each area:
 
 | Area | What good looks like |
 |---|---|
-| Bio and identity | Real name, a one-line role bio ("Backend dev · Go & Postgres · 2026 grad"), location, links |
+| Bio and identity | Real name, a one-line role bio (example: "Backend dev · Go & Postgres · <grad year> grad"), location, links |
 | Profile README | Short: who you are, what you're building now, 3 best projects with one line each, how to reach you. No stat-widget overload, no giant GIFs |
 | Pinned repos | 4–6 of your *best original* work, matching your target role. No forks, no tutorial clones, no college assignments unless they're impressive |
 | Repo READMEs | For each pinned repo: what it is, a screenshot/GIF/demo link, the stack, how to run it, key technical decisions |

@@ -19,7 +19,7 @@ Recruiters spend seconds on a resume. Show the candidate exactly what those seco
 
 ## 1. Calibrate the bar
 
-State the bar in one line before roasting: `Judging as: 2026 CS grad · India · product companies (SDE-1) · competing with ~top 20% of campus applicants.` Use [CALIBRATION.md](CALIBRATION.md) for what "good" looks like at each level and market. Be brutal **relative to that bar**:
+State the bar in one line before roasting, filled from the profile, for example `Judging as: <graduation year> CS grad · India · product companies (SDE-1) · competing with ~top 20% of campus applicants.` Use [CALIBRATION.md](CALIBRATION.md) for what "good" looks like at each level and market. Be brutal **relative to that bar**:
 - A second-year student with one solid project isn't "weak". Roast them against second-years.
 - A final-year student targeting big tech with tutorial clones and no DSA proof *is* weak. Say so plainly.
 - An engineer with 2 years' experience who still lists college projects first gets roasted for it.
