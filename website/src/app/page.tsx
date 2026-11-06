@@ -105,7 +105,7 @@ export default function Home() {
             <section key={g.id} aria-labelledby={`g-${g.id}`}>
               <div className="mb-1 flex items-baseline gap-2">
                 <span className="font-mono text-[11px] text-faint">0{gi + 1}</span>
-                <h3 id={`g-${g.id}`} className="text-[15px] font-semibold tracking-[-0.015em]">{g.title}</h3>
+                <h3 id={`g-${g.id}`} className="font-display text-[13.5px] font-semibold tracking-[-0.04em]">{g.title}</h3>
               </div>
               <p className="mb-2.5 text-[13px] text-fg-muted">{g.blurb}</p>
               <ul className="overflow-hidden rounded-lg border border-line bg-white/[0.015]">

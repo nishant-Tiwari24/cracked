@@ -35,7 +35,7 @@ export function PageHeader({ meta, icon, title, subtitle, actions }: {
       <div aria-hidden="true" className="pointer-events-none absolute -left-24 -top-32 size-[420px] rounded-full bg-[radial-gradient(closest-side,#c6ff3d14,transparent)]" />
       <div className="relative">
         {meta}
-        <h1 className="mt-4 flex items-center gap-3.5 text-[clamp(1.75rem,1.2rem+1.6vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.035em]">
+        <h1 className="mt-4 flex items-center gap-3.5 font-display text-[clamp(1.4rem,1rem+1.4vw,2.1rem)] font-semibold leading-[1.15] tracking-[-0.06em]">
           {icon}
           <span>{title}</span>
         </h1>
