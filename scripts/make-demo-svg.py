@@ -11,6 +11,7 @@ Each demo is a list of (kind, text, hold_seconds). Kinds:
   ok   success line (green)    warn  warning line (amber)   err  problem line (red)
   card highlighted heading     bar   ("Label", score/10)     note  dim footnote
   row  plain aligned text      blank empty line
+  neo  ("portrait", "info") two-column neofetch line; the info column has a fixed x
 Keep demos honest: "example" sessions must follow what the skill actually does.
 """
 import html
@@ -114,6 +115,33 @@ DEMOS = {
         ("bar", ("Hygiene & Security", 9), 0),
         ("note", "Pinning has no API. Next: Profile → Customize your pins → shopkart, ratelimiter-go.", 4.5),
     ]),
+    # Example session on a real public profile (github.com/dave1725), chosen by the maintainer:
+    # portrait generated from the real avatar by skills/profile/github-glowup/scripts/image-to-ascii.py.
+    "github-glowup-readme": ("cracked · /github-glowup · example: neofetch README for dave1725", [
+        ("cmd", "claude", 0.3),
+        ("you", "glow up my profile README, neofetch style with my photo as ASCII", 0.5),
+        ("sys", "✓ read github.com/dave1725: 37 repos, Flam, Bangalore, top languages", 0.4),
+        ("sys", "✓ avatar → background removed on-device (Apple Vision) → braille, 34 columns", 0.9),
+        ("blank", "", 0),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⡂⠅⠢⢐⢐⠄⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', 'dave1725@github ──────────────────────────'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠅⠅⠅⠂⠅⠡⢑⠠⢑⠔⢔⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. Name: ............................. Dave'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠠⠨⠀⠅⠌⡐⢁⠅⡁⠢⢈⠐⢌⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. Host: ............................. Flam'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠌⠠⠁⠅⡂⡐⡀⡂⠌⡨⢀⠅⢂⠂⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. Location: ................ Bangalore, IN'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠌⡈⠌⡀⡂⢄⢂⢪⣊⠢⠢⢥⢵⡐⡈⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. Repos: .............................. 37'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠐⡀⡂⡆⢎⢆⢆⣗⣷⣅⠯⣜⣮⣷⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. Languages: ... TypeScript, Python, JS'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠂⢜⢾⣳⣷⡻⡼⢿⢾⡿⣷⣿⣻⠌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', ''), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⢣⠕⢕⡻⣺⢷⡪⡮⣲⢿⣻⣺⢽⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '- Projects ───────────────────────────────'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠢⢹⢸⢱⠡⡗⢮⣢⡳⣝⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. poseidon ..... zk-SNARK automation CLI'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⡑⢝⢽⣺⣞⡮⡏⢮⢢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀', '. heracles ... Windows maintenance toolkit'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⡂⡢⠡⡁⡃⠕⡡⡣⣫⢇⢻⢦⣄⣀⣀⡀⠀⡀⠀⠀⠀⠀⠀', '. hypermed ........ healthcare data on DLT'), 0.12),
+        ("neo", ('⠀⠀⠀⠀⠀⠀⣀⣤⢶⢥⢑⢬⠸⣰⢢⢪⢸⡸⣪⡳⡡⡣⡫⣿⣟⢝⠝⢍⢝⢽⢶⣦⠀⠀', ''), 0.12),
+        ("neo", ('⠀⠀⢀⠠⢴⢻⢵⢳⣻⡸⣱⢱⢕⢜⢕⡧⣣⢯⡪⡮⣲⢧⠦⣿⡧⡃⢅⠕⣐⣽⢝⣾⠟⡗', '- Contact ────────────────────────────────'), 0.12),
+        ("neo", ('⠀⢄⢕⠡⡩⠨⢂⠽⣗⡝⡬⡳⣝⢽⢮⣯⢯⡷⡏⡝⠵⡻⣝⣽⣿⢬⡢⡇⡇⣿⡻⡪⡨⠨', '. Website: ............. iamdave.vercel.app'), 0.6),
+        ("blank", "", 0),
+        ("ok", "Every value is from your public profile. Email left out; add it only if you want it.", 0.5),
+        ("you", "ship it", 0.5),
+        ("sys", "✓ README.md pushed to dave1725/dave1725", 4.5),
+    ]),
     # Real output from skills/core/company-intel/scripts/questions.py (Nov 2026 data).
     "company-intel": ("cracked · /company-intel · real data", [
         ("cmd", "claude", 0.3),
@@ -169,6 +197,20 @@ def build(name, title, script, static=False):
                 kf(i, start, dur, "0", f"{w:.0f}px", "width")
                 css.append(f".w{i}{{animation:k{i} {total:.2f}s linear infinite}}")
         else:
+            if kind == "neo":
+                left, right = text
+                xr = PAD + 36 * CHAR_W
+                pw = 34 * CHAR_W  # force the portrait to an exact width: braille glyph widths vary by font
+                el.append(f'<g class="l{i}"><text x="{PAD}" y="{y + 2}" fill="{C["fg"]}" style="font-size:17px" '
+                          f'textLength="{pw:.0f}" lengthAdjust="spacingAndGlyphs">{html.escape(left)}</text>'
+                          f'<text x="{xr:.0f}" y="{y}"><tspan fill="{C["dim"]}">│ </tspan>'
+                          f'<tspan fill="{C["lime"] if right[:1] in "-d" else C["muted"]}">{html.escape(right)}</tspan></text></g>')
+                if not static:
+                    kf(i, start, 0.15, "0", "1", "opacity")
+                    css.append(f".l{i}{{opacity:0;animation:k{i} {total:.2f}s ease-out infinite}}")
+                y += LH
+                prev_kind = kind
+                continue
             if kind == "bar":
                 label, n = text
                 body = (f'<tspan fill="{C["fg"]}">{html.escape(label.ljust(24))}</tspan>'
