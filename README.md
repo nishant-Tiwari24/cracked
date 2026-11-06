@@ -12,5 +12,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/oa-sim`](skills/interview/oa-sim/SKILL.md) | Simulate a timed online assessment (OA / coding test) like the ones used in campus placements and off-campus hiring. |
 | [`/pattern-coach`](skills/interview/pattern-coach/SKILL.md) | Teach DSA problem-solving patterns (sliding window, two pointers, binary search on answer, BFS/DFS, DP, monotonic stack, etc.) Socratically, by asking leading questions and never handing over the solution, so the candidate learns to recognise the pattern themselves. |
 | [`/core-viva`](skills/interview/core-viva/SKILL.md) | Rapid-fire CS fundamentals viva covering Operating Systems, DBMS, Computer Networks, OOP, and SQL (with real query execution), the core-subject questions asked in technical placement rounds. |
+| [`/system-design-mock`](skills/interview/system-design-mock/SKILL.md) | Run a system design interview (HLD, e.g. |
 
 License: MIT
