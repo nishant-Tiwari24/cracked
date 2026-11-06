@@ -1,0 +1,28 @@
+name: Bug report
+description: A skill did something wrong (bad score, wrong test case, broken step)
+labels: [bug]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      placeholder: /mock-interview
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model
+      placeholder: Claude Code 2.x · Opus / Codex · GPT / Cursor …
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened vs what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Relevant transcript excerpt (remove personal info)
