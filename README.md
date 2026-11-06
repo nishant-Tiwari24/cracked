@@ -15,5 +15,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/system-design-mock`](skills/interview/system-design-mock/SKILL.md) | Run a system design interview (HLD, e.g. |
 | [`/hr-round`](skills/interview/hr-round/SKILL.md) | Practise HR and behavioral interview rounds ("tell me about yourself", "why this company", strengths/weaknesses, conflict, failure, leadership, gaps, salary expectations). |
 | [`/defend-my-project`](skills/interview/defend-my-project/SKILL.md) | Interviewers always grill candidates on their resume projects ("why MongoDB?", "what happens at 10k users?", "what was the hardest bug?"). |
+| [`/roast-my-resume`](skills/profile/roast-my-resume/SKILL.md) | Brutally honest tech resume review calibrated to the candidate's experience level, target market and target company. |
 
 License: MIT
