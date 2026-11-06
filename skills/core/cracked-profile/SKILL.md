@@ -35,9 +35,9 @@ If there is no shell or file access, keep the profile in the conversation and te
 
 ## Loading the profile
 
-1. Read `profile.md`. If it exists and the calling skill has what it needs, **do not ask any questions**. Say one line, e.g. `Loaded profile: 2026 grad · SDE-1 · product companies · C++ · placements in 9 weeks`, and hand back.
+1. Read `profile.md`. If it exists and the calling skill has what it needs, **do not ask any questions**. Say one line, for example `Loaded profile: <graduation year> grad · SDE-1 · product companies · C++ · placements in 9 weeks`, and hand back.
 2. If it is missing, or a field the calling skill needs is empty, run **Creating the profile** below, asking only for the missing fields.
-3. If a deadline in the profile has passed, ask once whether to update it.
+3. If a deadline in the profile has passed, ask once whether to update it. Get today's date from the shell (`date +%F`); never assume it.
 
 ## Creating the profile
 

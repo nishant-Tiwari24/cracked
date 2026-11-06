@@ -16,7 +16,7 @@ A plan that ignores where the candidate actually is goes in the bin by week two.
 
 ## 1. Budget the time
 
-- Weeks available = deadline − today. Total hours = weeks × 7 × hours_per_day × 0.8 (life happens; plan for 80%).
+- Weeks available = deadline − today. Get today's date by running `date +%F` (or `python3 -c "import datetime; print(datetime.date.today())"`); never assume it. Total hours = weeks × 7 × hours_per_day × 0.8 (life happens; plan for 80%).
 - Split the hours by target, using [ALLOCATION.md](ALLOCATION.md) as the starting point, then shift 10–20% toward the most frequent weak-spot tags.
 - If the time is unrealistic for the goal (e.g. 3 weeks, beginner, big-tech target), say so plainly, then give the **best plan for the time available** and a realistic alternative target. Never pretend it'll be fine.
 

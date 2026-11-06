@@ -1,6 +1,6 @@
 ---
 name: referral-dm
-description: Get noticed and referred at tech companies through the channels that actually work. It writes comments on LinkedIn hiring posts, LinkedIn connection notes (≤300 chars), DMs and InMails, alumni and recruiter outreach, cold emails, warm-up engagement before an ask, follow-ups, and a paste-ready referral blurb, all personalised and never spammy. Use when the user wants a referral, wants to reply to or comment on a hiring post, message a recruiter or employee on LinkedIn, cold email a company, reach alumni, or follow up on an application.
+description: Get noticed and referred at tech companies through the channels that actually work. It writes comments on LinkedIn hiring posts, LinkedIn connection notes (200 characters by default, 300 for Premium), DMs and InMails, alumni and recruiter outreach, cold emails, warm-up engagement before an ask, follow-ups, and a paste-ready referral blurb, all personalised and never spammy. Use when the user wants a referral, wants to reply to or comment on a hiring post, message a recruiter or employee on LinkedIn, cold email a company, reach alumni, or follow up on an application.
 ---
 
 # Referral DM
@@ -39,8 +39,10 @@ Recommend the path with the best odds, and say why in one line:
 - Then write the **follow-up DM** to the poster, referencing the comment.
 - Give 2 variants. Tell them to comment early (posts get flooded) and to make sure their profile headline matches the role.
 
-### 2.2 Connection note (LinkedIn, ≤ 300 characters)
-- A hook (why them) → who you are in a few words → a soft reason to connect. **No ask in the note** unless the path is recruiter + job ID.
+### 2.2 Connection note (LinkedIn)
+- **Default limit: 200 characters.** That's the most-cited limit for free accounts. Premium is commonly 300, and some sources report 300 for everyone (checked 2026-11; LinkedIn changes this). Write every default variant at ≤ 200 and offer one ≤ 300 Premium variant. If you have a web tool, verify the current limit; otherwise tell the user the composer enforces the real limit.
+- Free accounts get only a few personalised notes per month. **A blank connection request plus a DM after they accept** is a perfectly good path, so offer it.
+- Shape: a hook (why them) → who you are in a few words → a soft reason to connect. **No ask in the note** unless the path is recruiter + job ID.
 - Show the exact **character count** for each variant.
 
 ### 2.3 DM / InMail / email (after connecting, or to a recruiter)
@@ -52,7 +54,7 @@ Recommend the path with the best odds, and say why in one line:
 Plan 1–2 genuine touches before the ask: a thoughtful comment on their recent post (draft it, but they must actually read the post), or a reaction to their talk, blog or open-source project. **No fake engagement.** Comments must add something real.
 
 ### 2.5 Referral blurb
-2–3 lines the referrer can paste into their internal referral form: `<Name> is a 2026 CS grad who built <X> with <Y> (<link>), strong in <skill>. Applying for <role>, Job ID <id>.`
+2–3 lines the referrer can paste into their internal referral form: `<Name> is a <graduation year from profile> <degree> grad who built <X> with <Y> (<link>), strong in <skill>. Applying for <role>, Job ID <id>.` Fill every field from the profile or the user. Never guess a year or degree.
 
 ### 2.6 Follow-up
 One polite follow-up after 5–7 days with no reply, adding something new (an updated project, a newly posted role). **Max one.** After that, move on.
