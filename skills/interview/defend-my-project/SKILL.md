@@ -11,13 +11,19 @@ description: Interviewers always grill candidates on their resume projects ("why
 
 1. Call the Skill tool with "cracked-profile".
 2. Find the project:
-   - If the user gave a GitHub URL, clone it shallowly into a temp directory: `git clone --depth 50 <url> "$(mktemp -d)/repo"`.
+   - If the user gave a GitHub URL, clone it into a temp directory with full history (old commits matter for leaked secrets): `git clone <url> "$(mktemp -d)/repo"`. If it's very large, `git clone --filter=blob:limit=1m` and say so.
    - Otherwise, use the current working directory. If it's not a project (no source files), ask which repo.
 3. Ask one question: "Did you build this alone or in a team? Which parts were yours?" Only grill them on code they own.
 
 ## 1. Recon (silent; don't interview yet)
 
-Read the project like an interviewer prepping for the round. Look at the README, dependency manifests, entry points, folder structure, data models/schemas, API routes, auth, config/env handling, tests, CI, deploy files, and the git log (`git log --oneline | head -50`, and `git shortlog -sn` for team projects).
+**Verify before you accuse.** Every claim you'll quote back must have evidence:
+
+- **Tests and build:** find the project's test and build commands (`package.json` scripts, `Makefile`, `pytest.ini`, `go test ./...`). Tell the candidate you're about to run them, and run them read-only. Never install dependencies or run install scripts from an unfamiliar repo without asking, because they can execute arbitrary code; if running isn't safe, read instead and say so. Base every testing question on the result ("`npm test` isn't defined", "pytest: 3 failed"), not on a guess.
+- **Secrets:** scan tracked files (`git grep -nIE '(api[_-]?key|secret|password|token)\s*[:=]|AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY'`) and history (`git log -p -S'SECRET' --all | head -200`, repeated for `KEY`, `TOKEN`, `PASSWORD`). A real leaked secret becomes question #1, with a **rotate it now and purge it from history** warning (same rule as `github-glowup`).
+- **Size:** above ~200 tracked files, don't read everything. Sample entry points, routes and handlers, models and schemas, config, and the most-changed files (`git log --format= --name-only | sort | uniq -c | sort -rn | head -20`), and tell the candidate you sampled.
+
+Then read the project like an interviewer prepping for the round. Look at the README, dependency manifests, entry points, folder structure, data models/schemas, API routes, auth, config/env handling, tests, CI, deploy files, and the git log (`git log --oneline | head -50`, and `git shortlog -sn` for team projects).
 
 Build an **attack list** of 12–20 questions across these categories, each grounded in a specific file or line:
 

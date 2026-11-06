@@ -21,7 +21,7 @@ You are the interviewer in a 45-minute DSA round. Your job is to **assess and tr
 
 - **Company mode**: pull candidates from the company's reported questions:
   `python3 <company-intel-dir>/scripts/questions.py get "<Company>" --window 6m --difficulty <level> --format json --limit 40`.
-  Choose one matching the requested topic and difficulty, weighted toward higher frequency, that isn't already in `journal.md`. After the interview, tell them it's "frequently reported for <Company> by candidates", with the LeetCode link.
+  From the top 40, drop any whose slug already appears in `journal.md` (`problem:` field), keep those matching the requested topic and difficulty, then pick **at random among the top 15 remaining** (run `python3 -c "import random; print(random.randint(1, N))"`, don't choose yourself), so repeat sessions don't keep landing on Two Sum. After the interview, tell them it's "frequently reported for <Company> by candidates", with the LeetCode link.
 - **Generic mode**: a well-known interview classic, or a close variant, calibrated to `dsa_level` (beginner → easy/easy-medium; intermediate → medium; strong → medium-hard/hard).
 - Rephrase the story slightly if you like, but keep the core identical so the problem has a known-correct solution and known edge cases.
 - Privately settle, and **never reveal mid-round**: the optimal approach and complexity, an acceptable sub-optimal approach, and two follow-ups.
@@ -90,7 +90,7 @@ Don't comment on these signals during the interview. They go into the debrief.
 
 ## 7. Integrity check
 
-Practice only works if it's honest, and real interviews now probe for outside help. Follow [INTEGRITY.md](INTEGRITY.md): watch for the signals, run the **explain-and-modify probe** when they appear, and report an **Integrity** line in the debrief. Be fair. Signals aren't proof, so never accuse. State what you observed and what the probe showed.
+Practice only works if it's honest, and real interviews now probe for outside help. Follow [INTEGRITY.md](INTEGRITY.md): watch for the signals, and run the **explain-and-modify probe only when two or more signals appear**. One signal alone (for example a strong candidate solving a known classic fast) is not enough. Report an **Integrity** line in the debrief. Be fair. Signals aren't proof, so never accuse. State what you observed and what the probe showed.
 
 ## 8. Follow-ups
 
@@ -100,7 +100,7 @@ If time remains, ask one or two prepared follow-ups (optimise, change a constrai
 
 1. Stop the clock. Report total time and the **phase timeline**, e.g. `clarify 2m · approach 9m · code 18m · test 6m`.
 2. "Any questions for me?" Keep it to one exchange.
-3. Score with [RUBRIC.md](RUBRIC.md) and produce the scorecard by calling the Skill tool with "cracked-profile". Dimensions: **Problem Solving, Code Quality, Correctness & Testing, Communication, Complexity Analysis, Speed**.
+3. Score with [RUBRIC.md](RUBRIC.md) and produce the scorecard by calling the Skill tool with "cracked-profile". Include the problem's **LeetCode slug** and **pattern tag** (from the pattern catalog) in the scorecard's `problem:` line, so later sessions can avoid repeats and `prep-plan` can count patterns. Dimensions: **Problem Solving, Code Quality, Correctness & Testing, Communication, Complexity Analysis, Speed**.
 4. Then:
    - **Behaviour report**: 3–5 bullets from the monitor, e.g. "Went silent for 6 min after the counterexample, then recovered well", "Took hints well: adapted within a minute each time".
    - **Integrity**: `Clean`, or `Signals observed: <what> · probe result: <what>`.

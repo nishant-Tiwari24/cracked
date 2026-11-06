@@ -89,6 +89,7 @@ Every practice skill ends with a scorecard. To log it:
 ```
 cracked · /<skill-name> · <YYYY-MM-DD>
 <Title line: problem, topic, or document reviewed>
+problem: <leetcode-slug or -> · pattern: <pattern-tag or ->
 
 Verdict: <verdict>  (<overall>/10)
 
@@ -102,7 +103,7 @@ Fix next:  <the single highest-leverage thing to improve>
 
    Bars are 10 cells: `█` per point, `░` for the rest. Pad dimension names so the bars line up. Keep it to at most six dimensions.
 
-2. Append it to `journal.md` with a `## <YYYY-MM-DD> /<skill-name>` heading, plus one extra line, `weak_spots: <comma-separated tags>`, using short reusable tags (`dp`, `graphs`, `edge-cases`, `communication`, `time-management`, `sql-joins`, `star-structure`, `resume-metrics`). These tags are what `prep-plan` and `rejection-review` mine later, so reuse existing tags from the journal before inventing new ones.
+2. Append it to `journal.md` with a `## <YYYY-MM-DD> /<skill-name>` heading (keep the `problem:` line; use `-` when there's no single problem), plus one extra line, `weak_spots: <comma-separated tags>`, using short reusable tags (`dp`, `graphs`, `edge-cases`, `communication`, `time-management`, `sql-joins`, `star-structure`, `resume-metrics`). These tags are what `prep-plan` and `rejection-review` mine later, so reuse existing tags from the journal before inventing new ones.
 
 3. If the journal has three or more earlier entries for the same skill, add one trend line under the scorecard, e.g. `Trend: 5 → 6 → 8 over your last 3 mocks. Communication is now your weakest dimension.`
 

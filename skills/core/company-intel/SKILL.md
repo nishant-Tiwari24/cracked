@@ -18,7 +18,7 @@ When a candidate names a company, every cracked skill gets sharper: the OA uses 
 
 ## 1. Reported questions (always, if online)
 
-Run the bundled script. It fetches the community-maintained company-wise LeetCode dataset ([liquidslr/leetcode-company-wise-problems](https://github.com/liquidslr/leetcode-company-wise-problems), 470+ companies, frequency-ranked, refreshed regularly) and caches it in `$CRACKED_DIR/cache/`:
+Run the bundled script. It fetches the community-maintained company-wise LeetCode dataset ([liquidslr/leetcode-company-wise-problems](https://github.com/liquidslr/leetcode-company-wise-problems), 470+ companies, frequency-ranked) and caches it in `$CRACKED_DIR/cache/`. Every output ends with a freshness line (`cached <date> · dataset last updated upstream <date>`): quote it, and if the upstream date is more than ~3 months old, tell the user the data may be stale.
 
 ```bash
 python3 <this-skill-dir>/scripts/questions.py list <query>                 # find the exact company name
@@ -33,7 +33,9 @@ Other skills that need questions use the same script path. Tell them the absolut
 
 Windows: `30d`, `3m`, `6m` (default), `older`, `all`. Use `--format json` when another skill needs to pick problems programmatically.
 
-- If the script reports no exact match, it suggests close names. Confirm with the user.
+- Names match case- and punctuation-insensitively, with aliases for common long forms ("Tata Consultancy Services" → `tcs`, "Facebook" → Meta, "AWS" → Amazon). If there's still no match, it suggests close names: confirm with the user.
+- An empty window widens automatically (30d → 3m → 6m → all) and prints `window widened from X to Y`. Say which window you actually used.
+- If you hit GitHub's rate limit on a shared network, set `GITHUB_TOKEN`.
 - If the company isn't in the dataset (common for small startups, and for some service companies), say so, then fall back to the closest archetype in [ARCHETYPES.md](ARCHETYPES.md).
 - If you're offline, use the cache. If there's no cache, use the archetype and say so.
 - **Provenance**: always label these as "frequently reported by candidates (community dataset)", never as the company's official or leaked question bank.

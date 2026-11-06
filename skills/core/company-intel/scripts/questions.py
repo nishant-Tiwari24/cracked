@@ -13,13 +13,18 @@ Usage:
   questions.py topics COMPANY [--window W]     # topic frequency summary
 
 Cache: $CRACKED_HOME/cache (default ~/.cracked/cache), refreshed after 7 days.
+Set GITHUB_TOKEN to raise the GitHub API rate limit (60 requests/hour unauthenticated).
+Names are matched case- and punctuation-insensitively, with aliases (e.g. "Tata Consultancy
+Services" -> tcs, "Facebook" -> Meta). An empty window widens automatically (30d -> 3m -> 6m -> all).
 """
 import argparse
 import csv
 import difflib
 import io
+import datetime
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -37,6 +42,23 @@ WINDOWS = {
     "older": "4. More Than Six Months.csv",
     "all": "5. All.csv",
 }
+WIDEN = {"30d": ["30d", "3m", "6m", "all"], "3m": ["3m", "6m", "all"], "6m": ["6m", "all"],
+         "older": ["older", "all"], "all": ["all"]}
+COMMITS = f"https://api.github.com/repos/{REPO}/commits?per_page=1"
+# Common names that differ from the dataset's folder names. Targets are checked against the
+# live company list at runtime; an alias whose target is missing is ignored.
+ALIASES = {
+    "tataconsultancyservices": "tcs", "tataconsultancy": "tcs", "tcsltd": "tcs",
+    "alphabet": "Google", "googlellc": "Google",
+    "facebook": "Meta", "metaplatforms": "Meta",
+    "aws": "Amazon", "amazonwebservices": "Amazon",
+    "hcltech": "HCL", "hcltechnologies": "HCL",
+    "cognizanttechnologysolutions": "Cognizant", "cts": "Cognizant",
+    "infosyslimited": "Infosys", "wiprolimited": "Wipro",
+    "jpmc": "J.P. Morgan", "jpmorganchase": "J.P. Morgan",
+    "walmart": "Walmart Labs", "walmartglobaltech": "Walmart Labs",
+}
+SUFFIXES = ("limited", "ltd", "inc", "pvtltd", "private", "technologies", "india", "corp", "corporation")
 TTL = 7 * 24 * 3600
 CACHE = os.path.join(os.environ.get("CRACKED_HOME") or os.path.expanduser("~/.cracked"), "cache")
 
@@ -47,7 +69,10 @@ def fetch(url, cache_name):
     if os.path.exists(path) and time.time() - os.path.getmtime(path) < TTL:
         with open(path, encoding="utf-8") as f:
             return f.read()
-    req = urllib.request.Request(url, headers={"User-Agent": "cracked-skills"})
+    headers = {"User-Agent": "cracked-skills"}
+    if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             body = r.read().decode("utf-8")
@@ -69,15 +94,32 @@ def fetch(url, cache_name):
 def companies():
     body = fetch(TREE, "companies.json")
     data = json.loads(body)
+    if data.get("truncated"):
+        print("warning: the company list from GitHub was truncated; some companies may be missing", file=sys.stderr)
     return sorted(e["path"] for e in data.get("tree", []) if e["type"] == "tree")
+
+
+def norm(s):
+    return re.sub(r"[^0-9a-z]", "", s.casefold())
 
 
 def resolve(name):
     names = companies()
-    exact = {n.lower(): n for n in names}
-    if name.lower() in exact:
-        return exact[name.lower()]
-    prefix = [n for n in names if n.lower().startswith(name.lower())]
+    by_norm = {norm(n): n for n in names}
+    key = norm(name)
+    if key in by_norm:
+        return by_norm[key]
+    if key in ALIASES and ALIASES[key] in names:
+        return ALIASES[key]
+    stripped = key
+    for suf in SUFFIXES:
+        if stripped.endswith(suf) and len(stripped) > len(suf):
+            stripped = stripped[: -len(suf)]
+    if stripped in by_norm:
+        return by_norm[stripped]
+    if stripped in ALIASES and ALIASES[stripped] in names:
+        return ALIASES[stripped]
+    prefix = [n for n in names if norm(n).startswith(key)]
     if len(prefix) == 1:
         return prefix[0]
     close = difflib.get_close_matches(name, names, n=5, cutoff=0.6)
@@ -86,15 +128,30 @@ def resolve(name):
 
 
 def rows(company, window):
-    order = [window] if window != "6m" else ["6m", "all"]
+    order = WIDEN[window]
     for w in order:
         body = fetch(f"{RAW}/{urllib.parse.quote(company)}/{urllib.parse.quote(WINDOWS[w])}",
                      f"{company}--{w}.csv".replace("/", "_"))
         if body and body.strip():
             data = list(csv.DictReader(io.StringIO(body)))
             if data:
+                if w != window:
+                    print(f"note: no questions in window {window} for {company}; window widened from {window} to {w}", file=sys.stderr)
                 return w, data
     return window, []
+
+
+def freshness(company, window):
+    """Footer: when the local cache was fetched, and when the dataset was last updated upstream."""
+    path = os.path.join(CACHE, f"{company}--{window}.csv".replace("/", "_"))
+    cached = datetime.date.fromtimestamp(os.path.getmtime(path)).isoformat() if os.path.exists(path) else "-"
+    upstream = "-"
+    try:
+        body = fetch(COMMITS, "upstream-commit.json")
+        upstream = json.loads(body)[0]["commit"]["committer"]["date"][:10]
+    except Exception:
+        pass
+    return f"cached {cached} · dataset last updated upstream {upstream}"
 
 
 def main():
@@ -123,7 +180,8 @@ def main():
     company = resolve(a.company)
     used, data = rows(company, a.window)
     if not data:
-        sys.exit(f"error: no questions listed for {company}.")
+        sys.exit(f"error: the dataset has {company}, but no questions are listed for it in any window. "
+                 "Use the company-intel archetype fallback (ARCHETYPES.md) and say the data is missing.")
 
     if a.cmd == "topics":
         c = Counter(t.strip() for r in data for t in r.get("Topics", "").split(",") if t.strip())
@@ -133,7 +191,7 @@ def main():
         print("\n| Topic | Questions |\n|---|---|")
         for t, n in c.most_common(15):
             print(f"| {t} | {n} |")
-        print(f"\nSource: github.com/{REPO}")
+        print(f"\nSource: github.com/{REPO} · {freshness(company, used)}")
         return
 
     if a.difficulty:
@@ -146,13 +204,15 @@ def main():
     data = data[: a.limit]
 
     if a.format == "json":
-        print(json.dumps({"company": company, "window": used, "source": f"github.com/{REPO}", "questions": data}, indent=2))
+        print(json.dumps({"company": company, "window": used, "requested_window": a.window, "source": f"github.com/{REPO}",
+                          "freshness": freshness(company, used), "questions": data}, indent=2))
         return
     print(f"# {company} · window: {used} · top {len(data)} by reported frequency\n")
     print("| # | Difficulty | Title | Freq | Topics | Link |\n|---|---|---|---|---|---|")
     for i, r in enumerate(data, 1):
         print(f"| {i} | {r['Difficulty'].title()} | {r['Title']} | {float(r['Frequency'] or 0):.0f} | {r.get('Topics','')} | {r['Link']} |")
     print(f"\nSource: github.com/{REPO} (community-reported; frequency is relative within this company)")
+    print(freshness(company, used))
 
 
 if __name__ == "__main__":
