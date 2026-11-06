@@ -23,6 +23,7 @@
   ],
   "skills": [
     "./skills/core/setup-cracked",
-    "./skills/core/cracked-profile"
+    "./skills/core/cracked-profile",
+    "./skills/core/company-intel"
   ]
 }
