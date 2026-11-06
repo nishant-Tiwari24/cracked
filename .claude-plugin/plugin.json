@@ -27,6 +27,7 @@
     "./skills/core/company-intel",
     "./skills/interview/mock-interview",
     "./skills/interview/oa-sim",
-    "./skills/interview/pattern-coach"
+    "./skills/interview/pattern-coach",
+    "./skills/interview/core-viva"
   ]
 }
