@@ -1,0 +1,27 @@
+{
+  "name": "cracked",
+  "version": "1.0.0",
+  "description": "Agent skills to crack tech placements and job interviews: company-wise mock DSA interviews with voice mode, timed OAs with hidden tests, system design, HR rounds, resume roasts with ATS scoring, company resume blueprints, JD matching, project defense, prep plans and offer decoding.",
+  "author": {
+    "name": "Nishant Tiwari",
+    "url": "https://github.com/nishant-Tiwari24"
+  },
+  "homepage": "https://github.com/nishant-Tiwari24/cracked",
+  "repository": "https://github.com/nishant-Tiwari24/cracked",
+  "license": "MIT",
+  "keywords": [
+    "interview",
+    "placements",
+    "dsa",
+    "leetcode",
+    "system-design",
+    "resume",
+    "career",
+    "students",
+    "mock-interview",
+    "job-search"
+  ],
+  "skills": [
+    "./skills/core/cracked-profile"
+  ]
+}
