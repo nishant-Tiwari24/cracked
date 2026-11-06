@@ -148,6 +148,10 @@ No company named? Everything still works, in a generic product-company style.
 
 <img src="./assets/demos/github-glowup.svg" alt="Example /github-glowup run: recruiter view, a leaked secret caught, pinned-repo issues, README styles and the applied changes." width="900">
 
+And the profile README it can build, with your photo turned into braille ASCII (Style E):
+
+<img src="./assets/demos/github-glowup-readme.svg" alt="Example: /github-glowup builds a neofetch-style profile README for dave1725, with the avatar converted to a braille ASCII portrait next to real profile facts." width="900">
+
 </details>
 
 ### #4: Nobody Tells You Why You Failed
@@ -230,7 +234,7 @@ These split on one axis: who can invoke them. **User-invoked** skills run only w
 - **[roast-my-resume](./skills/profile/roast-my-resume/SKILL.md)**: A brutal, level- and market-calibrated roast with an ATS score, a recruiter scan, and fabrication-free rewrites.
 - **[resume-blueprint](./skills/profile/resume-blueprint/SKILL.md)**: A company-specific resume plan and a fill-in skeleton built from your real experience.
 - **[jd-match](./skills/profile/jd-match/SKILL.md)**: Resume vs job description, with a transparent score, gap triage, and a 7-day plan.
-- **[github-glowup](./skills/profile/github-glowup/SKILL.md)**: A recruiter's-eye audit, a leaked-secret check, and a modern profile README (ASCII-terminal, recruiter-first, minimal or story-led).
+- **[github-glowup](./skills/profile/github-glowup/SKILL.md)**: A recruiter's-eye audit, a leaked-secret check, and a modern profile README in five styles, including a neofetch layout with your photo turned into ASCII art.
 - **[make-it-hireable](./skills/profile/make-it-hireable/SKILL.md)**: A college project upgraded to production grade on a branch, one reviewed commit at a time.
 - **[referral-dm](./skills/profile/referral-dm/SKILL.md)**: Hiring-post comments, connection notes, DMs, alumni and recruiter outreach, and follow-ups that get replies.
 

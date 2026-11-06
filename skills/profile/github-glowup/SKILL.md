@@ -41,7 +41,7 @@ Score and comment on each area:
 
 Produce, in the conversation:
 1. **New bio** (3 options).
-2. **Profile README**: a complete Markdown file in a **modern style**. Read [README-STYLES.md](README-STYLES.md) and the curated references in [examples/](examples/), recommend one style (A: ASCII terminal, B: clean recruiter-first, C: minimal, D: story-led) based on their role and personality, and offer to render a second style for comparison. Use only real projects and facts. Generate any ASCII banner with a tool, and check that it's ≤ 80 columns.
+2. **Profile README**: a complete Markdown file in a **modern style**. Read [README-STYLES.md](README-STYLES.md) and the curated references in [examples/](examples/), recommend one style (A: ASCII terminal, B: clean recruiter-first, C: minimal, D: story-led, E: neofetch portrait, where their photo becomes braille ASCII via `scripts/image-to-ascii.py`) based on their role and personality, and offer to render a second style for comparison. Use only real projects and facts. Generate any ASCII banner with a tool, and check that it's ≤ 80 columns.
 3. **Pin plan**: which 4–6 repos to pin and in what order, with what to unpin and why.
 4. **README rewrites** for the 2–3 most important repos, from their actual code (read it), using this template: title + one-line pitch → demo/screenshot → features → tech stack → architecture (a short note, or a diagram if useful) → run locally → what I learned / technical challenges.
 5. **Descriptions and topics** for each pinned repo.

@@ -1,6 +1,6 @@
 # Modern profile README styles
 
-Pick **one** style that fits the candidate's personality and target role, then fill it with **real** content only. All styles render on GitHub with no external services, except for optional, clearly marked widgets.
+Pick **one** style (A–E) that fits the candidate's personality and target role, then fill it with **real** content only. All styles render on GitHub with no external services, except for optional, clearly marked widgets.
 
 Before choosing, check the [`examples/`](examples/) folder next to this file: curated real-world READMEs live there as references. Match their quality bar. Never copy someone else's README wholesale; adapt the structure.
 
@@ -83,6 +83,33 @@ I like shipping things people use. <Project> has <N real users>; <Project 2> <re
 **What I'm looking for:** <role, stack, remote/city>
 **Recently:** <a learning or writing link>
 ```
+
+## Style E: neofetch portrait (photo → ASCII)
+
+The most memorable style: the candidate's photo rendered as braille ASCII on the left, `neofetch`-style facts on the right. See [examples/neofetch-dave1725.md](examples/neofetch-dave1725.md).
+
+Make the portrait from their real photo (ask first, since it's their face on a public page):
+
+1. Get the photo: their GitHub avatar (`curl -sL "https://avatars.githubusercontent.com/u/<id>?s=400" -o photo.jpg`) or a file they give you.
+2. Cut out the background for a clean silhouette. On macOS, use the bundled `scripts/cutout.swift` (Apple Vision, on-device): `swift scripts/cutout.swift photo.jpg cut.png`. Elsewhere, skip this step; a plain background works best.
+3. Convert: `python3 scripts/image-to-ascii.py cut.png --width 34` (braille, the default) or `--mode ascii`. Use `--invert` for light themes and `--contrast 1.4` if the face is flat. Look at the output; if it doesn't read as a face, adjust and rerun before showing it.
+
+Layout: one ```` ```text ```` block (keeps alignment), portrait on the left, a `│` gutter, then facts:
+
+````markdown
+```text
+<portrait line 1>  │ <handle>@github ─────────────────────────────
+<portrait line 2>  │ . Host: ..................... <company or college>
+<portrait line 3>  │ . Kernel: ..................... <role / year>
+<portrait line 4>  │ . Location: ....................... <city>
+<portrait line 5>  │ . Languages: ............. <top 3 from their repos>
+<portrait line 6>  │ . Projects: ......... <2 real repos, one line each>
+<portrait line 7>  │ - Contact ───────────────────────────────────
+<portrait line 8>  │ . Website: ......................... <url>
+```
+````
+
+Rules: every value is real (from their profile, repos, or what they tell you); dot leaders pad each line to the same width; at most ~90 columns total so it doesn't wrap; don't publish an email unless they ask.
 
 ## Widgets (optional, use sparingly)
 

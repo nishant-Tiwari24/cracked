@@ -35,7 +35,7 @@ export default async function SkillPage({ params }: PageProps<"/skills/[slug]">)
 
   const toc = [
     { id: "what-it-does", text: "What it does" },
-    ...(skill.demo ? [{ id: "see-it-in-action", text: "See it in action" }] : []),
+    ...(skill.demos.length ? [{ id: "see-it-in-action", text: "See it in action" }] : []),
     ...(skill.whenToUse ? [{ id: "when-to-reach-for-it", text: "When to reach for it" }] : []),
     { id: "the-skill-in-full", text: "The skill, in full" },
     ...skill.headings,
@@ -93,11 +93,13 @@ export default async function SkillPage({ params }: PageProps<"/skills/[slug]">)
           <p>
             <span className="chip">/{skill.name}</span>: {skill.description}
           </p>
-          {skill.demo && (
+          {skill.demos.length > 0 && (
             <>
               <h2 id="see-it-in-action">See it in action</h2>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={asset(skill.demo)} alt={`Animated example of /${skill.name}`} className="w-full rounded-[14px]" />
+              {skill.demos.map((d) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img key={d} src={asset(d)} alt={`Animated example of /${skill.name}`} className="w-full rounded-[14px]" />
+              ))}
             </>
           )}
           {skill.whenToUse && (
