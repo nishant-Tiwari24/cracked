@@ -17,5 +17,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/defend-my-project`](skills/interview/defend-my-project/SKILL.md) | Interviewers always grill candidates on their resume projects ("why MongoDB?", "what happens at 10k users?", "what was the hardest bug?"). |
 | [`/roast-my-resume`](skills/profile/roast-my-resume/SKILL.md) | Brutally honest tech resume review calibrated to the candidate's experience level, target market and target company. |
 | [`/jd-match`](skills/profile/jd-match/SKILL.md) | Match a resume against a specific job description, giving a transparent match score, requirement-by-requirement evidence map, gaps sorted into "fix on resume" vs "learn in 7 days" vs "can't close quickly", tailored bullets (no fabrication), and a 7-day plan to close the gaps before applying or interviewing. |
+| [`/resume-blueprint`](skills/profile/resume-blueprint/SKILL.md) | Given a target company (and optionally a role), produce a company-specific resume blueprint covering what that company's screen looks for, the sections and order to use, which of the candidate's projects and experiences to lead with, must-have keywords, bullet templates tuned to the company's values, what to cut, and a fill-in-the-blanks resume skeleton built only from the candidate's real experience. |
 
 License: MIT

@@ -33,6 +33,7 @@
     "./skills/interview/hr-round",
     "./skills/interview/defend-my-project",
     "./skills/profile/roast-my-resume",
-    "./skills/profile/jd-match"
+    "./skills/profile/jd-match",
+    "./skills/profile/resume-blueprint"
   ]
 }
