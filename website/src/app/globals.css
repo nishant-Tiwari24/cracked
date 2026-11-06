@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Design tokens: dark docs theme (Geist / Geist Mono, neon lime brand accent, hairline borders). */
+/* Design tokens: dark docs theme (Martian Mono headings, JetBrains Mono code, Geist body; neon lime accent; hairline borders). */
 :root {
   --background: #0b0b0b;
   --foreground: #f4f3f1;
@@ -62,7 +62,8 @@
   --color-accent-wash: var(--accent-wash);
   --color-accent-line: var(--accent-line);
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono: var(--font-code), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: var(--font-display), var(--font-code), ui-monospace, monospace;
   --radius-ah: var(--radius);
 }
 
@@ -91,9 +92,9 @@ body {
 /* Rendered SKILL.md content */
 .prose-ah { color: var(--fg-body); font-size: 0.9375rem; line-height: 1.7; }
 .prose-ah > * + * { margin-top: 0.85rem; }
-.prose-ah h2 { color: var(--foreground); font-size: 1.375rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1.25; margin-top: 2.5rem; }
-.prose-ah h3 { color: var(--foreground); font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.015em; margin-top: 1.75rem; }
-.prose-ah h4 { color: var(--foreground); font-size: 0.9375rem; font-weight: 600; margin-top: 1.25rem; }
+.prose-ah h2 { font-family: var(--font-display); color: var(--foreground); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.04em; line-height: 1.25; margin-top: 2.5rem; }
+.prose-ah h3 { font-family: var(--font-display); color: var(--foreground); font-size: 0.9375rem; font-weight: 500; letter-spacing: -0.03em; margin-top: 1.75rem; }
+.prose-ah h4 { font-family: var(--font-display); color: var(--foreground); font-size: 0.8125rem; font-weight: 500; margin-top: 1.25rem; }
 .prose-ah h2 a, .prose-ah h3 a, .prose-ah h4 a { color: inherit; text-decoration: none; }
 .prose-ah strong { color: var(--foreground); font-weight: 600; }
 .prose-ah a { color: var(--accent-fill); text-decoration: none; }
@@ -116,3 +117,8 @@ body {
 .prose-ah th, .prose-ah td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.75rem 0.5rem 0; text-align: left; vertical-align: top; }
 .prose-ah th { color: var(--foreground); font-weight: 600; }
 .prose-ah hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+
+/* Display face helpers */
+.font-display { font-family: var(--font-display); }
+.prose-ah h2::before { content: "## "; color: var(--accent-fill); opacity: 0.75; }
+.prose-ah h3::before { content: "### "; color: var(--fg-faint); }

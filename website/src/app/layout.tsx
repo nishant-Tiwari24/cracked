@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, JetBrains_Mono, Martian_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
 
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const code = JetBrains_Mono({ variable: "--font-code", subsets: ["latin"] });
+const display = Martian_Mono({ variable: "--font-display", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
@@ -39,7 +40,7 @@ export const viewport: Viewport = { themeColor: "#0b0b0b", colorScheme: "dark" }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geist.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className={`${geist.variable} ${code.variable} ${display.variable} antialiased`}>
       <body className="min-h-screen">{children}</body>
     </html>
   );
