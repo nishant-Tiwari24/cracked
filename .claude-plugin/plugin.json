@@ -26,6 +26,7 @@
     "./skills/core/cracked-profile",
     "./skills/core/company-intel",
     "./skills/interview/mock-interview",
-    "./skills/interview/oa-sim"
+    "./skills/interview/oa-sim",
+    "./skills/interview/pattern-coach"
   ]
 }

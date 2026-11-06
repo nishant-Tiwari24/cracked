@@ -10,5 +10,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/company-intel`](skills/core/company-intel/SKILL.md) | Build or load a cached prep brief for a specific target company covering its interview process and rounds, OA format, the LeetCode questions and topics most frequently reported for it (recent and all-time), what its resume screen values, its stated values or leadership principles, and system design and HR focus. |
 | [`/mock-interview`](skills/interview/mock-interview/SKILL.md) | Run a realistic, timed DSA coding interview where the agent is the interviewer. |
 | [`/oa-sim`](skills/interview/oa-sim/SKILL.md) | Simulate a timed online assessment (OA / coding test) like the ones used in campus placements and off-campus hiring. |
+| [`/pattern-coach`](skills/interview/pattern-coach/SKILL.md) | Teach DSA problem-solving patterns (sliding window, two pointers, binary search on answer, BFS/DFS, DP, monotonic stack, etc.) Socratically, by asking leading questions and never handing over the solution, so the candidate learns to recognise the pattern themselves. |
 
 License: MIT
