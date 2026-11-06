@@ -1,0 +1,23 @@
+{
+  "name": "cracked",
+  "owner": {
+    "name": "Nishant Tiwari",
+    "url": "https://github.com/nishant-Tiwari24"
+  },
+  "description": "cracked: agent skills for cracking tech placements and job interviews.",
+  "plugins": [
+    {
+      "name": "cracked",
+      "source": "./",
+      "description": "17 agent skills for tech placements and interviews: company-wise mocks and OAs (470+ companies), system design, HR rounds, resume and GitHub reviews, prep plans and offer decoding.",
+      "category": "productivity",
+      "keywords": [
+        "interview",
+        "placements",
+        "dsa",
+        "resume",
+        "career"
+      ]
+    }
+  ]
+}
