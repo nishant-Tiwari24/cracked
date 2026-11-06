@@ -65,3 +65,7 @@ Draft a short, polite email or message: appreciation → a specific ask (a fixed
 Save the analysis to `$CRACKED_DIR/offers/<company>-<date>.md`. No scorecard for this skill.
 
 End with: "Estimates for planning only, not tax or legal advice. Confirm the final numbers with HR."
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

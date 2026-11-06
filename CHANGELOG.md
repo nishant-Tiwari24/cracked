@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-11-06
+
+### Fixed
+- `/mock-interview` now does what the README promises: it builds and executes a reference **and** a brute-force solution plus a random input generator before presenting the problem, then grades with edge cases, random differential testing (2,000–20,000 inputs, time-capped) and a max-size input. Correctness & Testing is scored from that run.
+- No instruction depends on the agent noticing silence any more. Sessions start by telling the candidate to say `stuck` or `time`, gaps are measured between turns, and the time left is shown once 90% of the round has passed (`/mock-interview`, `/system-design-mock`).
+- Agents without a Skill tool: every skill that hands off to another now says to open the named `SKILL.md` instead, and the README explains this.
+
+### Added
+- `skills/interview/oa-sim/RUNNER.md`: shared compile and run commands for C++, C, Java, Python, JavaScript and Go, per-language time multipliers, a portable Python timeout runner (macOS and Windows), a clock fallback, and the differential-testing procedure.
+- `/setup-cracked` checks the profile language's toolchain and `timeout`/`gtimeout`, and notes Windows fallbacks.
+- Eval `mock-interview-differential`: a greedy coin-change submission must be caught by random testing against a brute force.
+
 ## [1.1.0] - 2026-11-06
 
 ### Added
@@ -27,5 +39,6 @@ First public release.
 - Claude Code plugin and marketplace manifests; Codex metadata for every skill.
 - Structural validator, CI workflow, and a behavioural eval suite.
 
+[1.2.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.0
 [1.1.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.1.0
 [1.0.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.0.0

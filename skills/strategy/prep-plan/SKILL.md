@@ -66,3 +66,7 @@ Principles:
 ## 4. Finish
 
 Give the plan's headline and **this week's first three actions**, each with the exact cracked command to run. There's no scorecard for planning sessions; don't log to the journal.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

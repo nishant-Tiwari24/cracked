@@ -58,3 +58,7 @@ Be honest. If the evidence says "you didn't know Dijkstra", say that. If it genu
 1. Log a scorecard via the Skill tool with "cracked-profile", titled `<Company> · <round>`. Dimensions: **Knowledge, Problem-Solving Process, Implementation, Communication, Composure**, scored from the reconstruction. Tag weak spots precisely; this is where `prep-plan` gets its data.
 2. If `$CRACKED_DIR/plan.md` exists, offer to run `/prep-plan` to fold the drills into the plan.
 3. Close with one line of perspective that's true and not saccharine, e.g. "Most people who get offers have a pile of rejections behind them. The difference is that they debriefed."
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

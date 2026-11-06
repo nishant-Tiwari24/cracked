@@ -41,7 +41,7 @@ Tell the candidate: "The `.hidden/` folder holds the hidden tests. Opening it is
 
 ## 2. Run the test
 
-1. Record the start time with `date +%s`.
+1. Record the start time with `date +%s` (or the fallback in [RUNNER.md](RUNNER.md) § Clock).
 2. Print the session folder path, the problem titles, and the deadline as a wall-clock time.
 3. Stay quiet. If asked for help, reply: "This is a test, so no hints. You can ask me to clarify a statement." Clarify ambiguous statements only.
 4. If the candidate asks for remaining time, compute it from the clock.
@@ -49,7 +49,7 @@ Tell the candidate: "The `.hidden/` folder holds the hidden tests. Opening it is
 ## 3. Grade on "submit" (or when time is up)
 
 1. Record the end time and elapsed minutes. Code submitted after the limit is still graded, but marked late.
-2. For each coding problem, compile if needed, then run the candidate file against every hidden case with a **2-second timeout per case** (`timeout 2` / `gtimeout 2`, or a Python `subprocess` timeout if neither exists). Classify each case as AC / WA / TLE / RE / CE.
+2. For each coding problem, compile if needed, then run the candidate file against every hidden case using [RUNNER.md](RUNNER.md): a 2-second base limit scaled by the language's multiplier, with the portable Python timeout. Tell the candidate the limit that applied. Classify each case as AC / WA / TLE / RE / CE.
 3. Score MCQs against the key.
 4. Show a results table:
 
@@ -73,3 +73,7 @@ Then produce the scorecard by calling the Skill tool with "cracked-profile". Dim
 - Hidden tests must be **executed against a reference solution**, never guessed. A wrong expected output wrecks trust in the whole tool.
 - If you cannot run code, say so up front and switch to `mock-interview` style hand-tracing. Don't pretend to have run tests.
 - Never edit the candidate's solution files.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

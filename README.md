@@ -72,6 +72,13 @@ When the installer asks which skills to take, include `setup-cracked` and `crack
 
 </details>
 
+<details>
+<summary><strong>Using cracked in agents without a Skill tool</strong></summary>
+
+Skills hand off to each other ("Call the Skill tool with `company-intel`"). Claude Code and Codex do this natively. In other agents, the skills tell the model to open the named skill's `SKILL.md` and follow it, so install the whole pack, not single skills, and always include `cracked-profile`.
+
+</details>
+
 ### 2. Run `/setup-cracked`
 
 Run it once. It will:

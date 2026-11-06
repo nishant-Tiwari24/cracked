@@ -56,3 +56,7 @@ Call the Skill tool with "cracked-profile" and log a scorecard. Dimensions: **Pa
 ## Tone
 
 Encouraging, patient, precise. Celebrate the moment they spot the insight ("That's exactly it"). Never make them feel slow for needing more questions.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

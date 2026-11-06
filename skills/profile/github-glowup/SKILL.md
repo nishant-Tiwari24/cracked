@@ -58,3 +58,7 @@ Changes are public. Ask per item: "Want me to apply this?" Then:
 ## 5. Scorecard
 
 Call the Skill tool with "cracked-profile" and log a scorecard titled `github.com/<u>`. Dimensions: **First Impression, Pinned Work, READMEs, Hygiene & Security, Activity**.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

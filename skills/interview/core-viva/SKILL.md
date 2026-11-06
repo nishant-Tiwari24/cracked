@@ -56,3 +56,7 @@ After the last question:
 
 - Keep the pace brisk. No lectures between questions.
 - Be precise. Fundamentals have right answers, and an ambiguous "ideal answer" teaches the wrong thing. If a question has textbook-dependent variants (e.g. number of OSI layers vs the TCP/IP model), say so.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

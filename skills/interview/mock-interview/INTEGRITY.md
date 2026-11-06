@@ -10,7 +10,7 @@ You can't see the screen, the browser or other apps. You *can* see the conversat
 
 | Signal | Why it matters |
 |---|---|
-| A long silence, then a complete optimal solution with no visible thinking | Typical of a looked-up answer |
+| A long gap between messages (measured when the next one arrives), then a complete optimal solution with no visible thinking | Typical of a looked-up answer |
 | The code is far beyond their stated approach (e.g. they described brute force, then pasted a monotonic-stack solution) | Approach and code don't match |
 | A style mismatch: different naming or language idioms from their earlier code, editorial-style comments, or unused imports | Typical of copied code |
 | The code is the exact editorial/canonical solution, variable names included | Possible memorisation or copying |
@@ -32,7 +32,7 @@ Someone who wrote the code handles this in a minute or two. Someone who copied i
 
 In the debrief, one line:
 - `Integrity: Clean`
-- `Integrity: Signals observed (fast complete solution after a 7-min silence; style change) · probe passed: explained the invariant and adapted it for duplicates`
+- `Integrity: Signals observed (fast complete solution after a 7-min gap between messages; style change) · probe passed: explained the invariant and adapted it for duplicates`
 - `Integrity: Signals observed · probe not passed: couldn't explain the deque logic. Scores reflect the probe.`
 
 If the probe fails, score Problem Solving and Communication on what they *demonstrated*, and say so kindly: "This only helps if it's your own work. Want to retry a fresh problem?" Never lecture, and never accuse.

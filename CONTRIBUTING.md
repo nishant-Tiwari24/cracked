@@ -19,7 +19,8 @@ Categories: `core` (shared infrastructure), `interview`, `profile`, `strategy`.
 - **Invocation**: skills are model-invoked by default. A skill only a human should start sets `disable-model-invocation: true` in its frontmatter **and** `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; the validator checks that the two agree. Skills never call a user-invoked skill.
 - **`description` is model-facing**: say what the skill does, then "Use when the user …" with the phrases a candidate would actually type. Max 1024 characters.
 - **Keep `SKILL.md` under 500 lines.** Move long material (rubrics, question banks, tax tables) into sibling files and link them.
-- **Skills call each other explicitly**: `Call the Skill tool with "cracked-profile"`. Every skill that reads or writes `~/.cracked/` must load the profile first.
+- **Skills call each other explicitly**: `Call the Skill tool with "cracked-profile"`. Every skill that reads or writes `~/.cracked/` must load the profile first. Keep the explicit call syntax (the validator and Claude Code rely on it), and keep the closing `*Skill calls:*` footnote on any skill that calls another: harnesses without a Skill tool follow it to open the named `SKILL.md` instead.
+- **No instruction may depend on the agent noticing silence.** Agents only run when the user sends a message, so compute gaps between turns retrospectively and tell the user how to ask for help (`stuck`, `time`).
 - **Scorecards** follow the format defined in `skills/core/cracked-profile/SKILL.md`. Don't invent a new one.
 - **Never fabricate.** Skills must not invent candidate experience, metrics, or "real" company questions. Numbers that change over time (tax slabs, character limits) must name their source year and tell the agent to verify.
 

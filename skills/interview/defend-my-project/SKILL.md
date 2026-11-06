@@ -67,3 +67,7 @@ Call the Skill tool with "cracked-profile" and log a scorecard titled with the r
 
 - Every question must be grounded in the real code. Generic project questions are what this skill exists to replace.
 - Never edit their repo in this skill.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.
