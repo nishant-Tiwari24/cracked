@@ -6,6 +6,7 @@ import { Shell, monoLabel } from "@/components/shell";
 import { BrandMark, iconFor } from "@/components/icons";
 import { AuthorRow, ContentWithToc, InstallBlock, MetaLine, PageHeader, installAll } from "@/components/page-parts";
 import { CompanySearch } from "@/components/company-search";
+import { asset } from "@/lib/site";
 
 const scorecard = `cracked · /mock-interview · 2026-11-06
 Find a Free Slot (medium)
@@ -36,6 +37,7 @@ export default function Home() {
   const updated = skills.map((s) => s.updated).sort().at(-1)!;
   const toc = [
     { id: "what-it-is", text: "What it is" },
+    { id: "see-it", text: "See it in action" },
     { id: "the-skills", text: "The skills" },
     { id: "companies", text: "Company mode" },
     { id: "scorecards", text: "Scorecards and the journal" },
@@ -96,6 +98,12 @@ export default function Home() {
             <span className="chip">cracked</span> is {skills.length} small, composable skills that do those things. They run your code instead of guessing about it, use the questions your target company actually asks, and never invent a single fact about you. Everything you do is logged to a local journal, so the next session starts from your real weak spots.
           </p>
 
+          <h2 id="see-it">See it in action</h2>
+          <p>A real <span className="chip">/mock-interview</span> session, replayed. The interviewer never says where the bug is. It hands back one failing input, then tests the fix against 20,000 random cases.</p>
+        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={asset("/assets/demo.svg")} alt="A real cracked mock interview replayed in a terminal, ending with a Lean Hire 7/10 scorecard." width={880} height={517} className="mt-4 w-full rounded-[14px]" />
+        <div className="prose-ah">
           <h2 id="the-skills">The skills</h2>
           <p>Type a command, or just describe what you want (&quot;roast my resume&quot;) and your agent picks the right skill.</p>
         </div>

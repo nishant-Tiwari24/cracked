@@ -25,6 +25,10 @@ Agent skills for tech placements and coding interviews. Straight from your termi
 
 **Built for** final-year and pre-final-year CS students preparing for campus placements, new grads applying off-campus, and engineers switching jobs.
 
+<p align="center">
+  <img src="./assets/demo.svg" alt="A real cracked mock interview: the interviewer asks a Google problem, hands back a failing input instead of the answer, runs 20,000 randomised tests, and ends with a Lean Hire 7/10 scorecard." width="880">
+</p>
+
 Preparing for tech interviews is hard. Sheets, courses and grind lists try to help by handing you a list of 450 problems. But a list doesn't interview you, doesn't tell you *why* you'd be rejected, and has no idea which company you're walking into on Monday.
 
 These skills are small, composable and honest. They work with any model. They run your code instead of guessing about it. They never invent a single fact about you. Hack around with them. Make them your own.
