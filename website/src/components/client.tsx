@@ -25,15 +25,15 @@ export function CopyIconButton({ text, label = "Copy command" }: { text: string;
           setTimeout(() => setDone(false), 1500);
         }
       }}
-      className="grid size-9 shrink-0 place-items-center rounded-md border border-line-strong bg-hover text-body transition hover:text-foreground"
+      className="grid size-7 shrink-0 place-items-center rounded-md text-fg-muted transition-colors hover:bg-white/[0.07] hover:text-foreground"
     >
-      {done ? <Check className="size-4 text-yes" /> : <Copy className="size-4" />}
+      {done ? <Check className="size-3.5 text-primary" /> : <Copy className="size-3.5" />}
     </button>
   );
 }
 
 const pill =
-  "inline-flex h-10 items-center gap-2 rounded-[9px] border border-line-strong px-4 text-[15px] font-medium text-foreground transition hover:bg-hover";
+  "inline-flex h-8 items-center gap-1.5 rounded-md border border-line-strong bg-white/[0.03] px-3 text-[13px] font-medium text-foreground transition-colors hover:border-white/20 hover:bg-white/[0.07]";
 
 /** "Copy page": copies the skill's raw SKILL.md so it can be pasted into any agent. */
 export function CopyPageButton({ text }: { text: string }) {
@@ -49,7 +49,7 @@ export function CopyPageButton({ text }: { text: string }) {
         }
       }}
     >
-      {done ? <Check className="size-4 text-yes" /> : <ClipboardCopy className="size-4" />}
+      {done ? <Check className="size-3.5 text-primary" /> : <ClipboardCopy className="size-3.5" />}
       {done ? "Copied" : "Copy page"}
     </button>
   );
@@ -77,7 +77,7 @@ export function ShareButton({ title }: { title: string }) {
         }
       }}
     >
-      {done ? <Check className="size-4 text-yes" /> : <Share2 className="size-4" />}
+      {done ? <Check className="size-3.5 text-primary" /> : <Share2 className="size-3.5" />}
       {done ? "Link copied" : "Share"}
     </button>
   );
@@ -94,7 +94,7 @@ export function StarCount() {
   }, []);
   if (stars === null) return null;
   return (
-    <span className="tabular-nums opacity-80">
+    <span className="ml-0.5 rounded bg-white/[0.08] px-1.5 font-mono text-[11px] tabular-nums text-fg-muted">
       {Intl.NumberFormat("en", { notation: "compact" }).format(stars)}
     </span>
   );
@@ -116,13 +116,13 @@ export function Toc({ items }: { items: { id: string; text: string }[] }) {
     return () => io.disconnect();
   }, [items]);
   return (
-    <ul className="border-l border-line">
+    <ul className="space-y-px border-l border-line">
       {items.map((i) => (
         <li key={i.id}>
           <a
             href={`#${i.id}`}
-            className={`-ml-px block border-l py-[7px] pl-4 text-[15px] transition ${
-              active === i.id ? "border-gold text-foreground" : "border-transparent text-fg-muted hover:text-foreground"
+            className={`-ml-px block border-l py-1 pl-3 text-[12.5px] leading-snug transition-colors ${
+              active === i.id ? "border-primary text-foreground" : "border-transparent text-fg-muted hover:text-foreground"
             }`}
           >
             {i.text}
