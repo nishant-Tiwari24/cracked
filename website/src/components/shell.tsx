@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen, ChevronRight, FlaskConical, LayoutGrid, ScrollTex
 import { GROUPS, REPO_URL, getSkills } from "@/lib/skills";
 import { BrandMark, GitHubMark } from "./icons";
 import { StarCount } from "./client";
+import { asset } from "@/lib/site";
 
 export const monoLabel = "font-mono text-[11px] uppercase tracking-[0.08em]";
 
@@ -28,19 +29,28 @@ function Announcement() {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-20 flex h-14 items-center justify-between border-b border-line bg-background/80 px-4 backdrop-blur-xl md:px-6">
-      <div className="flex items-center gap-6">
-        <Link href="/" className="flex items-center gap-2.5">
+    <header className="sticky top-0 z-20 flex h-14 items-stretch justify-between border-b border-line bg-background/80 pr-4 backdrop-blur-xl md:pr-6">
+      <div className="flex items-stretch gap-6">
+        <Link href="/" className="flex items-center gap-2.5 pl-3 md:pl-5">
+          {/* Background-removed portrait sitting on the navbar's bottom edge */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={asset("/assets/nishant.png")}
+            alt="Nishant Tiwari"
+            width={54}
+            height={54}
+            className="mr-1 hidden h-[54px] w-[54px] self-end object-contain object-bottom sm:block"
+          />
           <BrandMark size={26} />
           <span className="text-[15px] font-semibold tracking-[-0.02em]">cracked</span>
         </Link>
-        <nav className="hidden items-center gap-1 sm:flex">
+        <nav className="hidden items-center gap-1 self-center sm:flex">
           <Link href="/#the-skills" className={`${btn.base} ${btn.ghost}`}>Skills</Link>
           <Link href="/#companies" className={`${btn.base} ${btn.ghost}`}>Companies</Link>
           <a href={`${REPO_URL}/releases`} className={`${btn.base} ${btn.ghost}`}>Changelog</a>
         </nav>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 self-center">
         <a href={REPO_URL} className={`${btn.base} ${btn.secondary} hidden md:inline-flex`}>
           <GitHubMark className="size-3.5" /> GitHub <StarCount />
         </a>
