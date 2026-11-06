@@ -25,6 +25,7 @@
     "./skills/core/setup-cracked",
     "./skills/core/cracked-profile",
     "./skills/core/company-intel",
-    "./skills/interview/mock-interview"
+    "./skills/interview/mock-interview",
+    "./skills/interview/oa-sim"
   ]
 }
