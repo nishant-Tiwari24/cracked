@@ -7,6 +7,10 @@ description: Load, create, or update the candidate's cracked profile and journal
 
 The shared memory layer for every cracked skill. It owns three things: the **data directory**, the **profile**, and the **journal**. Other skills call this skill first, then carry on with their own work.
 
+## Calling other skills
+
+cracked skills call each other with lines like `Call the Skill tool with "company-intel"`. **If your agent has no Skill tool**, open that skill's `SKILL.md` and follow it, then come back. The skills live side by side in the cracked folder: `core/cracked-profile`, `core/company-intel`, `interview/<name>`, `profile/<name>`, `strategy/<name>`. Never skip the profile step: the journal, company mode and scorecards depend on it.
+
 ## Data directory
 
 All cracked data lives in one directory, outside any project, so it follows the candidate across repos:

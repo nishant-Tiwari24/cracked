@@ -38,3 +38,7 @@ Then propose an **upgrade plan**: the 5–8 highest-impact items, ordered by *in
 3. **Interview talking points**: 5 likely questions about these changes, with answers.
 4. Next steps that need them (e.g. "Add your real Postgres URL to Vercel env and deploy").
 5. Re-score the checklist and log a scorecard via the Skill tool with "cracked-profile". Dimensions: **Docs, Testing, Code Quality, Security, Deployability**. Show the before → after.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

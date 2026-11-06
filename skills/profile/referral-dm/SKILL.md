@@ -74,3 +74,7 @@ Personalise every message. No identical blasts.
 
 - You **draft**. You never send messages, comment, connect, or email on the user's behalf unless they explicitly ask and have a tool configured. Even then, confirm each one.
 - No mass-messaging, scraping, or automation against LinkedIn's terms of service.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

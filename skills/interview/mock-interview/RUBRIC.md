@@ -16,6 +16,7 @@ Score each dimension 0–10. Anchor to these descriptions. When torn, pick the l
 - **0–4**: Hard to follow, or mostly incomplete.
 
 ## Correctness & Testing
+Score from the executed run in SKILL.md §5 (edge cases, random differential testing, max-size input), not from reading the code.
 - **9–10**: Passed all cases including edge cases on the first run; dry-ran unprompted.
 - **7–8**: Passed after fixing a bug they found themselves.
 - **5–6**: Needed failing inputs shown to them to find bugs; edge cases missed.

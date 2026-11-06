@@ -86,3 +86,7 @@ Top 15 recent questions: | Difficulty | Title | Topics | Link |
 ## 4. Hand back
 
 Give the calling skill (and the user) a 3–5 line summary: process, top 5 topics, the OA shape, and one gotcha. Then continue with the calling skill. If the user invoked this directly, offer next steps: `/oa-sim <company>`, `/mock-interview <company>`, `/resume-blueprint <company>`, `/hr-round <company>`.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

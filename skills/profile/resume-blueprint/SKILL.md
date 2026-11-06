@@ -46,3 +46,7 @@ Write `$CRACKED_DIR/resume/<company>-blueprint.md`: a full one-page resume skele
 
 - **Never fabricate.** No invented experience, metrics, or "what <Company> secretly wants". Everything is sourced, archetype-labelled, or comes from the candidate.
 - Company facts come only from the `company-intel` brief. If the brief says `unverified`, say the same here.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

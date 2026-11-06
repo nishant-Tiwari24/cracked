@@ -65,3 +65,7 @@ Five to seven strong stories cover about 90% of behavioral questions. Tell them 
 ## 4. Scorecard
 
 Call the Skill tool with "cracked-profile" and log a scorecard. Dimensions: **Structure (STAR), Specificity, Concision, Authenticity, Confidence**. Weak-spot tags include `star-structure`, `vague-results`, `too-long`, `cliches`.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

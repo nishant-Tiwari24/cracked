@@ -76,3 +76,7 @@ Rewrite every weak bullet using **Action verb + what you built + how (tech) + me
 6. **Where you stand**: one honest paragraph on how they compare with the competition at their level, and the single biggest lever (often "one deployed project with real users" or "a contest rating").
 7. Offer to write the improved resume to `$CRACKED_DIR/resume/resume-<date>.md`, or to edit their LaTeX/Markdown source directly (only with explicit permission). For a company-specific version, point to `/resume-blueprint <company>`.
 8. The scorecard, via the Skill tool with "cracked-profile". Dimensions: **ATS-Readiness** (ATS score / 10), **Impact, Relevance, Projects, Clarity & Format**. Weak-spot tags: `resume-metrics`, `resume-ats`, `resume-projects`, `resume-keywords`.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.

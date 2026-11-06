@@ -63,3 +63,7 @@ Sort every non-strong item into exactly one bucket:
 
 - No fabrication, ever. Recommending someone claim a skill they don't have gets them rejected in the interview, or fired later.
 - Quote the JD's exact wording for keywords. ATS matching is often literal.
+
+---
+
+*Skill calls:* if your agent has no Skill tool, open the named skill's `SKILL.md` in the cracked skills folder (`core/`, `interview/`, `profile/`, `strategy/`) and follow it instead.
