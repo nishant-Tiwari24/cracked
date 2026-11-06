@@ -21,5 +21,8 @@ Agent skills to crack tech placements and job interviews.
 | [`/github-glowup`](skills/profile/github-glowup/SKILL.md) | Audit and upgrade a candidate's GitHub profile the way recruiters and interviewers see it, covering profile README, pinned repos, repo READMEs, descriptions, topics, commit history and red flags, then draft the fixes (profile README, repo READMEs, descriptions) and apply them only with permission. |
 | [`/make-it-hireable`](skills/profile/make-it-hireable/SKILL.md) | Upgrade a student or college project into something that impresses interviewers by adding what real engineering teams expect (README, tests, CI, env config, error handling, linting, deployment, a fixed security flaw) in small, reviewed steps on a separate branch. |
 | [`/referral-dm`](skills/profile/referral-dm/SKILL.md) | Get noticed and referred at tech companies through the channels that actually work. |
+| [`/prep-plan`](skills/strategy/prep-plan/SKILL.md) | Build a realistic week-by-week placement / job-prep plan from the candidate's deadline, daily hours, target companies, current level and their actual weak spots from past cracked sessions. |
+| [`/rejection-review`](skills/strategy/rejection-review/SKILL.md) | A structured, honest post-mortem after an interview or OA, whether rejected, ghosted, or unsure. |
+| [`/offer-decode`](skills/strategy/offer-decode/SKILL.md) | Decode a tech job offer or CTC breakup into what the candidate actually takes home. |
 
 License: MIT
