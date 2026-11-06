@@ -1,0 +1,4 @@
+# Keep GitHub's language stats about the project itself, not test data.
+evals/_fixtures/** linguist-vendored
+evals/**/resources/** linguist-vendored
+*.md linguist-detectable=false
