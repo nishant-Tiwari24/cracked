@@ -23,5 +23,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/referral-dm`](skills/profile/referral-dm/SKILL.md) | Get noticed and referred at tech companies through the channels that actually work. |
 | [`/prep-plan`](skills/strategy/prep-plan/SKILL.md) | Build a realistic week-by-week placement / job-prep plan from the candidate's deadline, daily hours, target companies, current level and their actual weak spots from past cracked sessions. |
 | [`/rejection-review`](skills/strategy/rejection-review/SKILL.md) | A structured, honest post-mortem after an interview or OA, whether rejected, ghosted, or unsure. |
+| [`/offer-decode`](skills/strategy/offer-decode/SKILL.md) | Decode a tech job offer or CTC breakup into what the candidate actually takes home. |
 
 License: MIT

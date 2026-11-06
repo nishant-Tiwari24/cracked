@@ -39,6 +39,7 @@
     "./skills/profile/make-it-hireable",
     "./skills/profile/referral-dm",
     "./skills/strategy/prep-plan",
-    "./skills/strategy/rejection-review"
+    "./skills/strategy/rejection-review",
+    "./skills/strategy/offer-decode"
   ]
 }
