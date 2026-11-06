@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="517" viewBox="0 0 880 517" role="img" aria-label="A cracked mock interview in the terminal: the interviewer asks a Google problem, hands back a failing input instead of the answer, runs 20,000 randomised tests, and ends with a Lean Hire 7/10 scorecard.">
+<title>cracked: a real mock interview, replayed</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,2.559%{width:0}3.232%,97%{width:69px}100%{width:0}}.l0w{animation:k0 23.45s linear infinite}@keyframes k1{0%,4.938%{width:0}9.539%,97%{width:352px}100%{width:0}}.l1w{animation:k1 23.45s linear infinite}@keyframes k2{0%,12.098%{opacity:0}12.738%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 23.45s ease-out infinite}@keyframes k3{0%,16.448%{opacity:0}17.088%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 23.45s ease-out infinite}@keyframes k4{0%,16.960%{opacity:0}17.600%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 23.45s ease-out infinite}@keyframes k5{0%,17.472%{opacity:0}18.111%,97%{opacity:1}100%{opacity:0}}.l5{opacity:0;animation:k5 23.45s ease-out infinite}@keyframes k6{0%,24.807%{width:0}33.112%,97%{width:620px}100%{width:0}}.l6w{animation:k6 23.45s linear infinite}@keyframes k7{0%,35.671%{opacity:0}36.310%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 23.45s ease-out infinite}@keyframes k8{0%,41.727%{width:0}46.440%,97%{width:360px}100%{width:0}}.l8w{animation:k8 23.45s linear infinite}@keyframes k9{0%,48.999%{opacity:0}49.639%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 23.45s ease-out infinite}@keyframes k10{0%,56.334%{width:0}65.200%,97%{width:660px}100%{width:0}}.l10w{animation:k10 23.45s linear infinite}@keyframes k11{0%,67.759%{opacity:0}68.399%,97%{opacity:1}100%{opacity:0}}.l11{opacity:0;animation:k11 23.45s ease-out infinite}@keyframes k13{0%,73.474%{opacity:0}74.113%,97%{opacity:1}100%{opacity:0}}.l13{opacity:0;animation:k13 23.45s ease-out infinite}@keyframes k14{0%,73.985%{opacity:0}74.625%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 23.45s ease-out infinite}@keyframes k15{0%,74.497%{opacity:0}75.137%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 23.45s ease-out infinite}@keyframes k16{0%,75.009%{opacity:0}75.649%,97%{opacity:1}100%{opacity:0}}.l16{opacity:0;animation:k16 23.45s ease-out infinite}@keyframes k17{0%,75.521%{opacity:0}76.160%,97%{opacity:1}100%{opacity:0}}.l17{opacity:0;animation:k17 23.45s ease-out infinite}@keyframes k18{0%,76.033%{opacity:0}76.672%,97%{opacity:1}100%{opacity:0}}.l18{opacity:0;animation:k18 23.45s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}rect[class$="w"]{width:880px}}
+</style>
+<rect width="880" height="517" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="879" height="516" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H879.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="440.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /mock-interview</text>
+<clipPath id="c0"><rect class="l0w" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="l1w" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">mock interview for Google, medium, Python</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">✓ profile loaded   ✓ Google: 6-month reported questions fetched</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Find a Free Slot. Given busy meetings, working hours and a</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#6f736c">         </tspan><tspan fill="#f4f3f1">duration, return the earliest start time, or -1.</tspan></text>
+<text class="l5" x="28" y="189"><tspan fill="#6f736c">         </tspan><tspan fill="#f4f3f1">What would you like to clarify before your approach?</tspan></text>
+<clipPath id="c6"><rect class="l6w" x="28" y="195" height="21" width="0"/></clipPath>
+<text x="28" y="210" clip-path="url(#c6)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">Can intervals overlap or touch? Is busy sorted? Plan: sort, walk the gaps.</tspan></text>
+<text class="l7" x="28" y="231"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Both happen; it isn&#x27;t sorted. Approach is fine. Code it.</tspan></text>
+<clipPath id="c8"><rect class="l8w" x="28" y="237" height="21" width="0"/></clipPath>
+<text x="28" y="252" clip-path="url(#c8)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">Done. One pass, returns -1 if no gap fits.</tspan></text>
+<text class="l9" x="28" y="273"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Before I comment, trace it on busy=[[9,10]], hours 9–17, duration 1.</tspan></text>
+<clipPath id="c10"><rect class="l10w" x="28" y="279" height="21" width="0"/></clipPath>
+<text x="28" y="294" clip-path="url(#c10)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">...returns -1, but 10–17 is free. Missed the gap after the last meeting. Fixed.</tspan></text>
+<text class="l11" x="28" y="315"><tspan fill="#a7aba3">▶ ran 9 edge cases + 20,000 randomised inputs vs brute force: 0 mismatches</tspan></text>
+<text class="l13" x="28" y="357"><tspan fill="#c6ff3d" font-weight="700">Verdict: Lean Hire  (7/10)</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#f4f3f1">Problem Solving        </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l15" x="28" y="399"><tspan fill="#f4f3f1">Correctness &amp; Testing  </tspan><tspan fill="#c6ff3d">██████</tspan><tspan fill="#2a2d30">████</tspan><tspan fill="#f4f3f1">  6</tspan></text>
+<text class="l16" x="28" y="420"><tspan fill="#f4f3f1">Communication          </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l17" x="28" y="441"><tspan fill="#f4f3f1">Complexity Analysis    </tspan><tspan fill="#c6ff3d">███████</tspan><tspan fill="#2a2d30">███</tspan><tspan fill="#f4f3f1">  7</tspan></text>
+<text class="l18" x="28" y="462"><tspan fill="#a7aba3">Fix next: you said &quot;done&quot; before testing. Trace two edge cases out loud.</tspan></text>
+</svg>
