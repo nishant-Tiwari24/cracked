@@ -32,6 +32,7 @@
     "./skills/interview/system-design-mock",
     "./skills/interview/hr-round",
     "./skills/interview/defend-my-project",
-    "./skills/profile/roast-my-resume"
+    "./skills/profile/roast-my-resume",
+    "./skills/profile/jd-match"
   ]
 }

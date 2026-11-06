@@ -16,5 +16,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/hr-round`](skills/interview/hr-round/SKILL.md) | Practise HR and behavioral interview rounds ("tell me about yourself", "why this company", strengths/weaknesses, conflict, failure, leadership, gaps, salary expectations). |
 | [`/defend-my-project`](skills/interview/defend-my-project/SKILL.md) | Interviewers always grill candidates on their resume projects ("why MongoDB?", "what happens at 10k users?", "what was the hardest bug?"). |
 | [`/roast-my-resume`](skills/profile/roast-my-resume/SKILL.md) | Brutally honest tech resume review calibrated to the candidate's experience level, target market and target company. |
+| [`/jd-match`](skills/profile/jd-match/SKILL.md) | Match a resume against a specific job description, giving a transparent match score, requirement-by-requirement evidence map, gaps sorted into "fix on resume" vs "learn in 7 days" vs "can't close quickly", tailored bullets (no fabrication), and a 7-day plan to close the gaps before applying or interviewing. |
 
 License: MIT
