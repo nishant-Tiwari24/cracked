@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: roast-resume
+tags: [profile, smoke]
+context:
+  add_dirs: [resources]
