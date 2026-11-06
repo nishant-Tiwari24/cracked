@@ -31,6 +31,7 @@ Categories: `core` (shared infrastructure), `interview`, `profile`, `strategy`.
 | `scripts/list-skills.sh` | Print the catalog (`--md` for a Markdown table) |
 | `scripts/eval.sh [case]` | Run the eval suite (`RUNS=3`, `BASELINE=0`, `JOBS=4`) |
 | `scripts/release.sh <version>` | Bump versions, check the changelog, validate, commit and tag |
+| `scripts/deploy-site.sh` | Build the website and publish it to Vercel (`PREVIEW=1` for a preview URL) |
 
 ## Before you open a PR
 
