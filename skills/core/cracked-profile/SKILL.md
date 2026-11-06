@@ -103,9 +103,22 @@ Fix next:  <the single highest-leverage thing to improve>
 
    Bars are 10 cells: `█` per point, `░` for the rest. Pad dimension names so the bars line up. Keep it to at most six dimensions.
 
-2. Append it to `journal.md` with a `## <YYYY-MM-DD> /<skill-name>` heading (keep the `problem:` line; use `-` when there's no single problem), plus one extra line, `weak_spots: <comma-separated tags>`, using short reusable tags (`dp`, `graphs`, `edge-cases`, `communication`, `time-management`, `sql-joins`, `star-structure`, `resume-metrics`). These tags are what `prep-plan` and `rejection-review` mine later, so reuse existing tags from the journal before inventing new ones.
+2. Append it to `journal.md` with a `## <YYYY-MM-DD> /<skill-name>` heading (keep the `problem:` line; use `-` when there's no single problem), plus one extra line, `weak_spots: <comma-separated tags>`, using short reusable tags (`dp`, `graphs`, `edge-cases`, `communication`, `time-management`, `sql-joins`, `star-structure`, `resume-metrics`). These tags are what `prep-plan` and `rejection-review` mine later, so **pick from the canonical list below first**, then from tags already in the journal, and only then invent one (lowercase, hyphenated).
 
 3. If the journal has three or more earlier entries for the same skill, add one trend line under the scorecard, e.g. `Trend: 5 → 6 → 8 over your last 3 mocks. Communication is now your weakest dimension.`
+
+### Canonical weak-spot tags
+
+- **DSA patterns** (from `interview/pattern-coach/PATTERNS.md`): `hashing`, `two-pointers`, `sliding-window`, `prefix-sums`, `binary-search`, `binary-search-on-answer`, `monotonic-stack`, `monotonic-deque`, `linked-list`, `heap`, `intervals`, `tree-dfs`, `tree-bfs`, `bst`, `graph-bfs-dfs`, `topological-sort`, `union-find`, `shortest-path`, `backtracking`, `dp-1d`, `dp-2d`, `dp-knapsack`, `dp-interval`, `greedy`, `bit-manipulation`, `trie`, `design`
+- **Interview process**: `clarifying-questions`, `edge-cases`, `testing`, `complexity`, `communication`, `time-management`, `composure`, `code-quality`
+- **Core subjects** (from `interview/core-viva/SYLLABUS.md`): `os-<topic>`, `dbms-<topic>`, `cn-<topic>`, `oop-<topic>`, `sql-<topic>` (e.g. `os-deadlock`, `sql-window-functions`)
+- **System design**: `sd-requirements`, `sd-data-model`, `sd-scaling`, `sd-tradeoffs`, `lld-design`, `lld-concurrency`
+- **Behavioral**: `star-structure`, `vague-results`, `too-long`, `cliches`, `company-fit`
+- **Resume and profile**: `resume-metrics`, `resume-ats`, `resume-projects`, `resume-keywords`, `github-hygiene`
+
+## Your data and privacy
+
+Everything cracked saves lives in the data directory on your machine: your profile, journal, plan, story bank, resume drafts, offer analyses, outreach tracker, rejection notes and company briefs. It's plain Markdown. Nothing is uploaded by cracked itself. The only network traffic is your agent's normal traffic to its model provider, plus downloads of the public company-question dataset (and web lookups if your agent has a web tool). To delete everything, remove the directory (`rm -r ~/.cracked`, or your `CRACKED_HOME`). Tell the user this once, the first time you create the profile.
 
 ## Honesty rules (apply to every cracked skill)
 

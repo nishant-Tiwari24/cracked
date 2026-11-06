@@ -41,10 +41,12 @@ Score and comment on each area:
 
 Produce, in the conversation:
 1. **New bio** (3 options).
-2. **Profile README**: a complete Markdown file in a **modern style**. Read [README-STYLES.md](README-STYLES.md) and the curated references in [examples/](examples/), recommend one style (A: ASCII terminal, B: clean recruiter-first, C: minimal, D: story-led, E: neofetch portrait, where their photo becomes braille ASCII via `scripts/image-to-ascii.py`) based on their role and personality, and offer to render a second style for comparison. Use only real projects and facts. Generate any ASCII banner with a tool, and check that it's ≤ 80 columns.
+2. **Profile README**: a complete Markdown file in a **modern style**. Read [README-STYLES.md](README-STYLES.md) and the curated references in [examples/](examples/), recommend one style (A: ASCII terminal, B: clean recruiter-first, C: minimal, D: story-led, E: neofetch portrait, where their photo becomes braille ASCII via `scripts/image-to-ascii.py`) based on their role and personality, and offer to render a second style for comparison. Use only real projects and facts. **Never describe a project's features, numbers or organisation that you haven't read in its code or README, or been told.** Write `[what it does]` and ask instead. Hedging ("tell me if this is wrong") doesn't make an invented detail acceptable. Generate any ASCII banner with a tool, and check that it's ≤ 80 columns.
 3. **Pin plan**: which 4–6 repos to pin and in what order, with what to unpin and why.
 4. **README rewrites** for the 2–3 most important repos, from their actual code (read it), using this template: title + one-line pitch → demo/screenshot → features → tech stack → architecture (a short note, or a diagram if useful) → run locally → what I learned / technical challenges.
 5. **Descriptions and topics** for each pinned repo.
+
+**Fact check before you show any draft.** Go through every bio, README and description line and ask, for each factual claim (a feature, number, habit, organisation, tech, achievement): *did I read this in their repo or profile, or did they tell me?* If not, replace it with a `[placeholder]` or delete it. That includes flattering filler like "solving DSA daily" or "organised by pattern". Then add one line under the drafts: `Fact-checked: every claim is from your repos or what you told me; [placeholders] need your input.`
 
 ## 4. Apply (only with explicit permission)
 

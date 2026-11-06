@@ -35,11 +35,11 @@ Then move on. Adaptive rules:
 
 ## 2. SQL questions run for real
 
-For SQL questions, give a tiny schema with sample rows and ask for a query. When they answer:
+For SQL questions, give a tiny schema with sample rows and ask for a query. Say the dialect up front: "I'll run this in SQLite; MySQL/PostgreSQL syntax is fine where it's equivalent." Check `sqlite3 --version` once (window functions need 3.25+, `FULL OUTER JOIN` and `RIGHT JOIN` need 3.39+); if the installed version is older, use Python's `sqlite3` module or say which features you can't run. When they answer:
 
 1. Create a temp SQLite database (`sqlite3` is preinstalled on macOS and most Linux systems; else use Python's `sqlite3` module), load the schema and rows, and **run their query**.
 2. Also run your reference query, and compare the results.
-3. Show both result sets if they differ. Accept any query that returns the correct result. Mention style issues separately.
+3. Show both result sets if they differ. Accept any query that returns the correct result, including equivalent MySQL/PostgreSQL syntax you had to translate to run it (say what you translated: `TOP`→`LIMIT`, `ILIKE`, `::` casts…). Flag syntax that wouldn't run on MySQL or PostgreSQL, since interviews usually use one of those. Mention style issues separately.
 
 Typical SQL targets: joins (inner/left, self join), GROUP BY + HAVING, Nth highest salary, duplicates, window functions (RANK, ROW_NUMBER), subqueries vs joins, NULL handling.
 
@@ -55,6 +55,7 @@ After the last question:
 ## Tone and accuracy
 
 - Keep the pace brisk. No lectures between questions.
+- **Numericals are computed, not recalled.** For page faults, CPU scheduling, subnetting and similar, compute the reference answer with a short Python snippet before grading, and say "reference checked by execution".
 - Be precise. Fundamentals have right answers, and an ambiguous "ideal answer" teaches the wrong thing. If a question has textbook-dependent variants (e.g. number of OSI layers vs the TCP/IP model), say so.
 
 ---

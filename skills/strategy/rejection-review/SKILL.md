@@ -41,7 +41,7 @@ Classify the evidence against these failure modes. A rejection usually has one p
 
 Be honest. If the evidence says "you didn't know Dijkstra", say that. If it genuinely looks external, say *that* too, so they don't over-correct. Some rejections aren't about performance.
 
-**Cross-check the journal**: do these failure modes or weak-spot tags appear in past mocks? A repeat is the headline finding: "This is the third time edge cases sank you: twice in mocks, now in a real round."
+**Cross-check the journal**: normalise its tags onto the canonical list in `cracked-profile`, then check whether these failure modes or weak-spot tags appear in past mocks. A repeat is the headline finding: "This is the third time edge cases sank you: twice in mocks, now in a real round."
 
 ## 3. Prescribe
 

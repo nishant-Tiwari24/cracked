@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: rejection-review-cites-repeats
+tags: [strategy]
+context:
+  add_dirs: [resources]
