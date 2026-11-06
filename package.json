@@ -1,6 +1,6 @@
 {
   "name": "cracked",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "description": "Agent skills to crack tech placements and job interviews.",
   "type": "module",

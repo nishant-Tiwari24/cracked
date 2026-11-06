@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.2] - 2026-11-06
+
+### Fixed
+- `/oa-sim`: hidden tests, references and the MCQ key live in a separate grader folder (`$CRACKED_DIR/oa/.sessions/<id>/`) and grading runs from there; numerical MCQ answers are computed and unverifiable questions dropped; per-language time limits come from `RUNNER.md`; the cutoff verdict is labelled a heuristic.
+- `/company-intel` (`questions.py`): case- and punctuation-insensitive matching with checked aliases ("Tata Consultancy Services" → tcs, Facebook → Meta, AWS → Amazon, JPMC → J.P. Morgan…); empty windows widen automatically with a message; `GITHUB_TOKEN` support; a truncation warning; a freshness footer (cache date and upstream last update); a clear message when the dataset has a company but no questions.
+- `/mock-interview`: random choice among the top 15 unseen problems (no more Two Sum every time); the scorecard records `problem: <slug> · pattern: <tag>`; the integrity probe runs only with 2+ signals.
+- `/defend-my-project`: verifies before accusing (runs test and build commands read-only with consent, never installs from unknown repos without asking), scans tracked files and git history for secrets, clones with full history, and samples large repos.
+
+### Tests
+- New graders: `defend-project` must back testing claims with evidence and flag the hardcoded secret; `oa-sim-generate` checks the hidden files are outside the candidate folder. Both cases pass.
+
 ## [1.2.1] - 2026-11-06
 
 ### Fixed
@@ -50,6 +61,7 @@ First public release.
 - Claude Code plugin and marketplace manifests; Codex metadata for every skill.
 - Structural validator, CI workflow, and a behavioural eval suite.
 
+[1.2.2]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.2
 [1.2.1]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.1
 [1.2.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.0
 [1.1.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.1.0

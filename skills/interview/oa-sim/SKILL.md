@@ -26,18 +26,23 @@ These are generic archetypes, not any specific company's real test. Say so once.
 
 ## 1. Generate the test
 
-Create a session folder: `$CRACKED_DIR/oa/<YYYY-MM-DD-HHMM>/`. In it, write:
+Create two folders for session id `<YYYY-MM-DD-HHMM>`:
+
+- the **candidate folder** `$CRACKED_DIR/oa/<id>/`, the only folder you tell them about
+- the **grader folder** `$CRACKED_DIR/oa/.sessions/<id>/`, outside the candidate folder, which holds everything hidden
+
+In the candidate folder, write:
 
 - `README.md`: the rules, the time limit, the section list, and how to submit ("say **submit** in the chat when done").
 - For each coding problem `qN`:
   - `qN.md`: the full statement, input/output format via **stdin/stdout**, constraints, and 2 sample cases. Write it in the style of a real OA: a short story wrapper, precise constraints. For problems taken from the company list, **write the statement in your own words** (don't copy LeetCode's text), and **don't reveal the title or link until the debrief**, so the solution can't be looked up mid-test.
   - `qN.<ext>`: a starter file in the profile language that reads stdin and writes stdout, with a `solve` function stub.
-  - `.hidden/qN/`: 10–15 hidden test cases as `NN.in` / `NN.out` pairs. Include the samples, edge cases, and at least 2 **large** cases that time out a brute force. Generate the large cases with a small script, and compute every expected output with **your own reference solution, executed**. Never hand-write expected outputs for non-trivial cases. Keep the reference solution in `.hidden/qN/ref.<ext>`.
-- For MCQ sections: `mcq.md` with numbered questions and options A–D, plus an answer-sheet template `answers.txt` (`1: `, `2: `, …). Keep the key in `.hidden/mcq-key.txt`.
+  - in the **grader folder** `qN/`: 10–15 hidden test cases as `NN.in` / `NN.out` pairs. Include the samples, edge cases, and at least 2 **large** cases that time out a brute force. Generate the large cases with a small script, and compute every expected output with **your own reference solution, executed**. Never hand-write expected outputs for non-trivial cases. Keep the reference solution in the grader folder as `qN/ref.<ext>`, and a brute force (`qN/brute.<ext>`) where feasible, cross-checked as in [RUNNER.md](RUNNER.md) § Differential testing.
+- For MCQ sections: `mcq.md` with numbered questions and options A–D, plus an answer-sheet template `answers.txt` (`1: `, `2: `, …). Keep the key in the grader folder as `mcq-key.txt`. **Compute every numerical answer** (aptitude, probability, time and work, page faults, subnetting) with Python and store the working next to the key. **Drop any question whose answer you can't verify** by computation or a definition you're certain of.
 
 Verify before starting: run each reference solution against its own sample cases and confirm they match `qN.md`. Fix any mismatch before the candidate sees the test.
 
-Tell the candidate: "The `.hidden/` folder holds the hidden tests. Opening it is cheating yourself."
+Tell the candidate only the candidate folder. If they ask where the tests are: "They're stored separately so the test stays fair. Looking at them would only cheat yourself."
 
 ## 2. Run the test
 
@@ -49,7 +54,7 @@ Tell the candidate: "The `.hidden/` folder holds the hidden tests. Opening it is
 ## 3. Grade on "submit" (or when time is up)
 
 1. Record the end time and elapsed minutes. Code submitted after the limit is still graded, but marked late.
-2. For each coding problem, compile if needed, then run the candidate file against every hidden case using [RUNNER.md](RUNNER.md): a 2-second base limit scaled by the language's multiplier, with the portable Python timeout. Tell the candidate the limit that applied. Classify each case as AC / WA / TLE / RE / CE.
+2. For each coding problem, compile if needed, then run the candidate file against every hidden case **from the grader folder** using [RUNNER.md](RUNNER.md): a 2-second base limit scaled by the language's multiplier, with the portable Python timeout. Tell the candidate the limit that applied. Classify each case as AC / WA / TLE / RE / CE.
 3. Score MCQs against the key.
 4. Show a results table:
 
@@ -60,7 +65,7 @@ Q3  Interval Scheduler       0/12 (CE)        0
 MCQ                          24/30            80
 ```
 
-5. **Cutoff verdict.** Typical OA shortlists need roughly full marks on the easy problem plus substantial partial credit on the medium. Report: `Likely shortlisted`, `Borderline`, or `Unlikely`, with the one-line reason.
+5. **Cutoff verdict (heuristic).** As a rule of thumb, shortlists tend to need near-full marks on the easiest problem plus substantial partial credit on the next. Report `Likely shortlisted`, `Borderline` or `Unlikely`, with the one-line reason, and label it: *"heuristic, not this company's real cutoff"*.
 
 ## 4. Debrief
 

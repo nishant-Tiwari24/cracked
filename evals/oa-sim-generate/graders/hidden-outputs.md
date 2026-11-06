@@ -1,5 +1,5 @@
 ---
 type: file_exists
-path: '**/.hidden/q1/*.out'
+path: '**/.sessions/*/q1/*.out'
 exists: True
 ---
