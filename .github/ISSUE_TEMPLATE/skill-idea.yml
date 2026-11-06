@@ -1,0 +1,16 @@
+name: Skill idea or improvement
+description: Suggest a new skill, rubric, question bank or country reference
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does a candidate have?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should the skill do?
+    validations:
+      required: true
