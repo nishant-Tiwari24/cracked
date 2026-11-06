@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* Design tokens: dark docs theme (Geist / Geist Mono, warm gold accent, hairline borders). */
+:root {
+  --background: #0b0b0b;
+  --foreground: #f4f3f1;
+  --card: #100f0e;
+  --popover: #0d0d0c;
+  --primary: #f5c451;
+  --primary-foreground: #191510;
+  --accent-fill: #f5c451;
+  --accent-fill-hover: #ffd873;
+  --secondary: #ffffff12;
+  --muted: #0d0d0c;
+  --muted-foreground: #f4f3f199;
+  --border: #ffffff14;
+  --input: #ffffff1f;
+  --ring: #f5c45159;
+  --radius: 9px;
+
+  --fg-body: #f4f3f1b8;
+  --fg-muted: #f4f3f199;
+  --fg-subtle: #f4f3f185;
+  --fg-label: #f4f3f17a;
+  --fg-faint: #f4f3f14d;
+  --line: #ffffff14;
+  --line-strong: #ffffff1f;
+  --line-soft: #ffffff0f;
+  --mark-yes: #58da98;
+  --mark-no: #fd736d;
+  --hover: #ffffff12;
+  --accent-wash: #f5c45112;
+  --accent-panel: #1d1a11;
+  --accent-line: #f5c45159;
+  --band: #0e0e0d;
+  --frame: #050505;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-gold: var(--accent-fill);
+  --color-gold-hover: var(--accent-fill-hover);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-line-soft: var(--line-soft);
+  --color-hover: var(--hover);
+  --color-band: var(--band);
+  --color-frame: var(--frame);
+  --color-body: var(--fg-body);
+  --color-subtle: var(--fg-subtle);
+  --color-label: var(--fg-label);
+  --color-faint: var(--fg-faint);
+  --color-fg-muted: var(--fg-muted);
+  --color-yes: var(--mark-yes);
+  --color-no: var(--mark-no);
+  --color-accent-panel: var(--accent-panel);
+  --color-accent-wash: var(--accent-wash);
+  --color-accent-line: var(--accent-line);
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius-ah: var(--radius);
+}
+
+html { color-scheme: dark; scroll-padding-top: 6rem; }
+body {
+  background: var(--frame);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: #f5c45140; }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; border-radius: 6px; }
+
+/* Inline code chips, as in the reference design */
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  padding: 0.12em 0.4em;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: #ffffff0a;
+  color: var(--foreground);
+}
+
+/* Rendered SKILL.md content */
+.prose-ah { color: var(--fg-body); font-size: 1.0625rem; line-height: 1.75; }
+.prose-ah > * + * { margin-top: 1.1rem; }
+.prose-ah h2 { color: var(--foreground); font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; margin-top: 3.25rem; }
+.prose-ah h3 { color: var(--foreground); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; margin-top: 2.25rem; }
+.prose-ah h4 { color: var(--foreground); font-size: 1.05rem; font-weight: 600; margin-top: 1.75rem; }
+.prose-ah h2 a, .prose-ah h3 a, .prose-ah h4 a { color: inherit; text-decoration: none; }
+.prose-ah strong { color: var(--foreground); font-weight: 600; }
+.prose-ah a { color: var(--accent-fill); text-decoration: none; }
+.prose-ah a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.prose-ah ul, .prose-ah ol { padding-left: 1.4rem; }
+.prose-ah ul { list-style: disc; }
+.prose-ah ol { list-style: decimal; }
+.prose-ah li + li { margin-top: 0.4rem; }
+.prose-ah li::marker { color: var(--fg-faint); }
+.prose-ah :not(pre) > code {
+  font-family: var(--font-mono); font-size: 0.86em; padding: 0.12em 0.4em;
+  border: 1px solid var(--line-strong); border-radius: 6px; background: #ffffff0a; color: var(--foreground);
+}
+.prose-ah pre {
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.65; background: var(--card);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.15rem; overflow-x: auto; color: var(--foreground);
+}
+.prose-ah blockquote { border-left: 2px solid var(--accent-line); padding-left: 1rem; color: var(--fg-muted); }
+.prose-ah table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
+.prose-ah th, .prose-ah td { border-bottom: 1px solid var(--line); padding: 0.6rem 0.75rem 0.6rem 0; text-align: left; vertical-align: top; }
+.prose-ah th { color: var(--foreground); font-weight: 600; }
+.prose-ah hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
