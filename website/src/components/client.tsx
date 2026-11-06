@@ -92,7 +92,7 @@ export function StarCount() {
       .then((d) => typeof d?.stargazers_count === "number" && setStars(d.stargazers_count))
       .catch(() => {});
   }, []);
-  if (stars === null) return null;
+  if (stars === null || stars < 1) return null; // no "0" badge before launch
   return (
     <span className="ml-0.5 rounded bg-white/[0.08] px-1.5 font-mono text-[11px] tabular-nums text-fg-muted">
       {Intl.NumberFormat("en", { notation: "compact" }).format(stars)}

@@ -26,7 +26,7 @@ Agent skills for tech placements and coding interviews. Straight from your termi
 **Built for** final-year and pre-final-year CS students preparing for campus placements, new grads applying off-campus, and engineers switching jobs.
 
 <p align="center">
-  <img src="./assets/demo.svg" alt="A real cracked mock interview: the interviewer asks a Google problem, hands back a failing input instead of the answer, runs 20,000 randomised tests, and ends with a Lean Hire 7/10 scorecard." width="880">
+  <img src="./assets/demos/mock-interview.svg" alt="Example cracked mock interview: a dynamic programming problem where the interviewer answers a greedy idea with a counterexample, the code is tested against 20,000 random inputs, a follow-up is asked, and the round ends with a Hire 8/10 scorecard." width="900">
 </p>
 
 Preparing for tech interviews is hard. Sheets, courses and grind lists try to help by handing you a list of 450 problems. But a list doesn't interview you, doesn't tell you *why* you'd be rejected, and has no idea which company you're walking into on Monday.
@@ -107,6 +107,8 @@ I built these skills to fix the ways interview prep fails the people doing it.
 - [`/oa-sim`](./skills/interview/oa-sim/SKILL.md): a full online assessment as real files in your own editor, graded AC / WA / TLE against hidden tests whose expected outputs come from an **executed** reference solution.
 - [`/system-design-mock`](./skills/interview/system-design-mock/SKILL.md) and [`/hr-round`](./skills/interview/hr-round/SKILL.md): the other rounds, with real pushback.
 
+<img src="./assets/demos/oa-sim.svg" alt="Example /oa-sim run: a Google-style test graded against hidden tests, with failure patterns explained and a cutoff verdict." width="900">
+
 ### #2: You're Preparing For "An Interview", Not *The* Interview
 
 > "If you know the enemy and know yourself, you need not fear the result of a hundred battles."
@@ -122,6 +124,8 @@ I built these skills to fix the ways interview prep fails the people doing it.
 
 No company named? Everything still works, in a generic product-company style.
 
+<img src="./assets/demos/company-intel.svg" alt="Real /company-intel output: Amazon's topic mix and most reported medium and hard questions from the last 30 days." width="900">
+
 ### #3: Your Resume Says Nothing
 
 > "Be so good they can't ignore you."
@@ -136,6 +140,15 @@ No company named? Everything still works, in a generic product-company style.
 - [`/jd-match`](./skills/profile/jd-match/SKILL.md): a transparent match score against a real job description, with the gaps sorted into fix-today, learn-in-7-days, and can't-close.
 - [`/defend-my-project`](./skills/interview/defend-my-project/SKILL.md): reads your project's actual code and cross-examines you on it, quoting `file:line`, the way a sharp interviewer does.
 - [`/make-it-hireable`](./skills/profile/make-it-hireable/SKILL.md) and [`/github-glowup`](./skills/profile/github-glowup/SKILL.md): turn the college project and the empty GitHub into proof.
+
+<img src="./assets/demos/roast-my-resume.svg" alt="Example /roast-my-resume run: ATS score breakdown, quoted weak bullets with fixes, rewrites with [N] placeholders and a verdict." width="900">
+
+<details>
+<summary>See <code>/github-glowup</code> in action</summary>
+
+<img src="./assets/demos/github-glowup.svg" alt="Example /github-glowup run: recruiter view, a leaked secret caught, pinned-repo issues, README styles and the applied changes." width="900">
+
+</details>
 
 ### #4: Nobody Tells You Why You Failed
 

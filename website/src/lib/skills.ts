@@ -58,6 +58,7 @@ export type Skill = {
   sourceUrl: string;
   rawUrl: string;
   raw: string;
+  demo: string | null; // public path of an animated demo, if one exists
 };
 
 function frontmatter(text: string) {
@@ -178,6 +179,7 @@ export function getSkills(): Skill[] {
       sourceUrl: `${REPO_URL}/tree/main/${rel}`,
       rawUrl: `https://raw.githubusercontent.com/${REPO}/main/${rel}/SKILL.md`,
       raw,
+      demo: fs.existsSync(path.join(ROOT, "assets", "demos", `${name}.svg`)) ? `/assets/demos/${name}.svg` : null,
     } satisfies Skill;
   });
   return cache;

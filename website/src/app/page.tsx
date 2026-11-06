@@ -99,10 +99,10 @@ export default function Home() {
           </p>
 
           <h2 id="see-it">See it in action</h2>
-          <p>A real <span className="chip">/mock-interview</span> session, replayed. The interviewer never says where the bug is. It hands back one failing input, then tests the fix against 20,000 random cases.</p>
+          <p>An example <span className="chip">/mock-interview</span> round on a dynamic programming problem. The candidate reaches for greedy; the interviewer answers with a counterexample instead of the answer, then tests the solution against 20,000 random inputs and asks a follow-up.</p>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={asset("/assets/demo.svg")} alt="A real cracked mock interview replayed in a terminal, ending with a Lean Hire 7/10 scorecard." width={880} height={517} className="mt-4 w-full rounded-[14px]" />
+        <img src={asset("/assets/demos/mock-interview.svg")} alt="Example cracked mock interview on a dynamic programming problem, ending with a Hire 8/10 scorecard." width={900} height={534} className="mt-4 w-full rounded-[14px]" />
         <div className="prose-ah">
           <h2 id="the-skills">The skills</h2>
           <p>Type a command, or just describe what you want (&quot;roast my resume&quot;) and your agent picks the right skill.</p>

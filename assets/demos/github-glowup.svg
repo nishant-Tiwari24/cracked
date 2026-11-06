@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="513" viewBox="0 0 900 513" role="img" aria-label="cracked · /github-glowup · example session">
+<title>cracked · /github-glowup · example session</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,3.155%{width:0}3.943%,97%{width:71px}100%{width:0}}.w0{animation:k0 19.02s linear infinite}@keyframes k1{0%,5.521%{width:0}11.961%,97%{width:419px}100%{width:0}}.w1{animation:k1 19.02s linear infinite}@keyframes k2{0%,14.590%{opacity:0}15.379%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 19.02s ease-out infinite}@keyframes k3{0%,20.478%{opacity:0}21.267%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 19.02s ease-out infinite}@keyframes k4{0%,27.419%{opacity:0}28.207%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 19.02s ease-out infinite}@keyframes k5{0%,29.101%{opacity:0}29.890%,97%{opacity:1}100%{opacity:0}}.l5{opacity:0;animation:k5 19.02s ease-out infinite}@keyframes k6{0%,36.041%{opacity:0}36.830%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 19.02s ease-out infinite}@keyframes k7{0%,38.249%{opacity:0}39.038%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 19.02s ease-out infinite}@keyframes k8{0%,44.138%{opacity:0}44.926%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 19.02s ease-out infinite}@keyframes k9{0%,44.769%{opacity:0}45.557%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 19.02s ease-out infinite}@keyframes k10{0%,48.554%{opacity:0}49.343%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 19.02s ease-out infinite}@keyframes k11{0%,55.494%{width:0}59.306%,97%{width:257px}100%{width:0}}.w11{animation:k11 19.02s linear infinite}@keyframes k12{0%,62.461%{opacity:0}63.249%,97%{opacity:1}100%{opacity:0}}.l12{opacity:0;animation:k12 19.02s ease-out infinite}@keyframes k14{0%,67.928%{opacity:0}68.717%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 19.02s ease-out infinite}@keyframes k15{0%,68.559%{opacity:0}69.348%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 19.02s ease-out infinite}@keyframes k16{0%,69.190%{opacity:0}69.979%,97%{opacity:1}100%{opacity:0}}.l16{opacity:0;animation:k16 19.02s ease-out infinite}@keyframes k17{0%,69.821%{opacity:0}70.610%,97%{opacity:1}100%{opacity:0}}.l17{opacity:0;animation:k17 19.02s ease-out infinite}@keyframes k18{0%,70.452%{opacity:0}71.241%,97%{opacity:1}100%{opacity:0}}.l18{opacity:0;animation:k18 19.02s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}clipPath rect{width:900px}}
+</style>
+<rect width="900" height="513" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="899" height="512" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H899.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="450.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /github-glowup · example session</text>
+<clipPath id="c0"><rect class="w0" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="w1" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">glow up my GitHub, I&#x27;m applying for backend roles</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">✓ read profile, 34 repos, pinned items, READMEs, contribution graph</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">In 10 seconds a recruiter sees: no bio, 4 pinned forks, and READMEs with no demo.</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#fd736d">  ✗ shopkart/.env is committed and contains RAZORPAY_KEY_SECRET</tspan></text>
+<text class="l5" x="28" y="189"><tspan fill="#fd736d">    Rotate that key now, then purge it from history. This is the #1 fix.</tspan></text>
+<text class="l6" x="28" y="210"><tspan fill="#ffc85c">  ! 4 of 6 pinned repos are forks or tutorial clones</tspan></text>
+<text class="l7" x="28" y="231"><tspan fill="#ffc85c">  ! 0 of 6 pinned repos have a screenshot or live link</tspan></text>
+<text class="l8" x="28" y="252"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Drafted: a new bio, a pin plan, README rewrites for shopkart and ratelimiter-go,</tspan></text>
+<text class="l9" x="28" y="273"><tspan fill="#6f736c">         </tspan><tspan fill="#f4f3f1">and a profile README in your choice of 4 styles:</tspan></text>
+<text class="l10" x="28" y="294"><tspan fill="#58da98">  A · ASCII terminal   B · recruiter-first   C · minimal   D · story-led</tspan></text>
+<clipPath id="c11"><rect class="w11" x="28" y="300" height="21" width="0"/></clipPath>
+<text x="28" y="315" clip-path="url(#c11)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">use style A and apply the bio</tspan></text>
+<text class="l12" x="28" y="336"><tspan fill="#a7aba3">✓ bio updated   ✓ profile README pushed to rahulv-dev/rahulv-dev</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#c6ff3d" font-weight="700">GitHub: 4/10 → 8/10</tspan></text>
+<text class="l15" x="28" y="399"><tspan fill="#f4f3f1">First Impression        </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l16" x="28" y="420"><tspan fill="#f4f3f1">Pinned Work             </tspan><tspan fill="#c6ff3d">███████</tspan><tspan fill="#2a2d30">███</tspan><tspan fill="#f4f3f1">  7</tspan></text>
+<text class="l17" x="28" y="441"><tspan fill="#f4f3f1">Hygiene &amp; Security      </tspan><tspan fill="#c6ff3d">█████████</tspan><tspan fill="#2a2d30">█</tspan><tspan fill="#f4f3f1">  9</tspan></text>
+<text class="l18" x="28" y="462"><tspan fill="#a7aba3">Pinning has no API. Next: Profile → Customize your pins → shopkart, ratelimiter-go.</tspan></text>
+</svg>
