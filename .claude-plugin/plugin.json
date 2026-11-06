@@ -35,6 +35,7 @@
     "./skills/profile/roast-my-resume",
     "./skills/profile/jd-match",
     "./skills/profile/resume-blueprint",
-    "./skills/profile/github-glowup"
+    "./skills/profile/github-glowup",
+    "./skills/profile/make-it-hireable"
   ]
 }
