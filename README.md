@@ -22,5 +22,6 @@ Agent skills to crack tech placements and job interviews.
 | [`/make-it-hireable`](skills/profile/make-it-hireable/SKILL.md) | Upgrade a student or college project into something that impresses interviewers by adding what real engineering teams expect (README, tests, CI, env config, error handling, linting, deployment, a fixed security flaw) in small, reviewed steps on a separate branch. |
 | [`/referral-dm`](skills/profile/referral-dm/SKILL.md) | Get noticed and referred at tech companies through the channels that actually work. |
 | [`/prep-plan`](skills/strategy/prep-plan/SKILL.md) | Build a realistic week-by-week placement / job-prep plan from the candidate's deadline, daily hours, target companies, current level and their actual weak spots from past cracked sessions. |
+| [`/rejection-review`](skills/strategy/rejection-review/SKILL.md) | A structured, honest post-mortem after an interview or OA, whether rejected, ghosted, or unsure. |
 
 License: MIT

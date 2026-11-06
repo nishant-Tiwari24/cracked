@@ -38,6 +38,7 @@
     "./skills/profile/github-glowup",
     "./skills/profile/make-it-hireable",
     "./skills/profile/referral-dm",
-    "./skills/strategy/prep-plan"
+    "./skills/strategy/prep-plan",
+    "./skills/strategy/rejection-review"
   ]
 }
