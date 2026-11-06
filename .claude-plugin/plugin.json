@@ -30,6 +30,7 @@
     "./skills/interview/pattern-coach",
     "./skills/interview/core-viva",
     "./skills/interview/system-design-mock",
-    "./skills/interview/hr-round"
+    "./skills/interview/hr-round",
+    "./skills/interview/defend-my-project"
   ]
 }
