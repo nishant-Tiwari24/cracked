@@ -19,6 +19,8 @@
 
 Agent skills for tech placements and coding interviews. Straight from your terminal.
 
+**[cracked-skills.vercel.app](https://cracked-skills.vercel.app)**: browse every skill, and search 470+ companies' most-asked questions.
+
 **cracked** turns Claude Code, Codex, Cursor, GitHub Copilot or Gemini CLI into your **interviewer, coach and career team**: company-wise mock DSA interviews for Google, Amazon, Microsoft, Flipkart and 470+ more; timed online assessments graded against hidden test cases; system design and HR rounds; a brutal resume roast with an ATS score; and a prep plan built from your real weak spots.
 
 **Built for** final-year and pre-final-year CS students preparing for campus placements, new grads applying off-campus, and engineers switching jobs.

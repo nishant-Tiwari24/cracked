@@ -10,7 +10,8 @@
     "list": "scripts/list-skills.sh",
     "link": "scripts/link-skills.sh",
     "eval": "scripts/eval.sh",
-    "release": "scripts/release.sh"
+    "release": "scripts/release.sh",
+    "deploy:site": "scripts/deploy-site.sh"
   },
   "license": "MIT"
 }

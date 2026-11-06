@@ -11,4 +11,12 @@ npm run build        # static export to ./out
 BASE_PATH=/cracked npm run build   # for GitHub Pages
 ```
 
-Deployment: `.github/workflows/pages.yml` builds and publishes to GitHub Pages on every push to `main` that touches `website/` or `skills/`.
+## Deploy
+
+Production lives on Vercel's free Hobby plan at https://cracked-skills.vercel.app. The site is built locally and uploaded as static files, so it needs no CI minutes:
+
+```bash
+scripts/deploy-site.sh          # from the repo root
+```
+
+The first run needs `npx vercel login` once. `.github/workflows/pages.yml` is kept for GitHub Pages as an alternative host.

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "resume review", "ATS score", "Claude Code skills", "agent skills", "Codex", "Cursor", "FAANG preparation",
   ],
   authors: [{ name: "Nishant Tiwari", url: "https://github.com/nishant-Tiwari24" }],
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     siteName: "cracked",
