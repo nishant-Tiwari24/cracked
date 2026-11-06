@@ -1,6 +1,8 @@
 # Tech resume rules
 
 ## ATS
+> These are readiness heuristics. No ATS vendor publishes a scoring formula, and each one parses differently.
+
 - Single column. No tables, text boxes, or graphics carrying content. Icons in place of words ("📞") parse as garbage.
 - Standard section headings: Education, Experience, Projects, Skills, Achievements (or close variants).
 - Contact details in the body, not the header or footer.

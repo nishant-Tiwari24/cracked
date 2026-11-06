@@ -2,6 +2,20 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] - 2026-11-06
+
+### Changed
+- `/core-viva`: states the SQL dialect, checks the SQLite version, accepts and flags MySQL/PostgreSQL equivalents, and computes numerical answers by execution.
+- `/roast-my-resume`: the score is labelled a *heuristic ATS-readiness score* (no ATS publishes one); notes on Canva/Figma PDFs and the `pdftotext` check.
+- `/system-design-mock`: LLD skeletons are compiled or linted, and the concurrency pushback gets a small executed test.
+- `cracked-profile`: a canonical weak-spot tag list and a privacy section (what's stored, where, and how to delete it); `prep-plan` and `rejection-review` normalise tags before counting.
+
+### Tests
+- Eight new eval cases, so every skill is covered: `hr-round`, `system-design-mock`, `prep-plan`, `rejection-review`, `make-it-hireable`, `github-glowup`, `setup-cracked`, `company-intel`. All pass.
+
+### Fixed
+- `/github-glowup` no longer pads drafts with unsupported details ("organised by pattern", "solving DSA daily"): a mandatory fact-check step runs before any draft is shown. Found by the new eval.
+
 ## [1.2.2] - 2026-11-06
 
 ### Fixed
@@ -61,6 +75,7 @@ First public release.
 - Claude Code plugin and marketplace manifests; Codex metadata for every skill.
 - Structural validator, CI workflow, and a behavioural eval suite.
 
+[1.3.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.3.0
 [1.2.2]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.2
 [1.2.1]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.1
 [1.2.0]: https://github.com/nishant-Tiwari24/cracked/releases/tag/v1.2.0

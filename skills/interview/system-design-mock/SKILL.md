@@ -39,6 +39,7 @@ Guide through these phases, but **let the candidate drive**. Step in if they ski
 3. **Interfaces and APIs**: key method signatures.
 4. **Code skeleton**: in their language, core classes only. Look for SOLID, sensible encapsulation, and patterns used for a *reason* (Strategy for pricing, Observer for notifications, State for vending machines).
 5. **Extensibility pushback**: "Now add EV charging spots.", "Now support concurrency: two cars grab the same spot." See whether the design bends or breaks.
+6. **Check it runs**: if they wrote a code skeleton, compile it (or run the language's linter) with the commands in [../oa-sim/RUNNER.md](../oa-sim/RUNNER.md). For the concurrency pushback, write a tiny test that starts two threads booking the same slot and asserts only one succeeds; run it several times and report the result. With no shell, say the design was reviewed by reading only.
 
 ## 3. Conduct
 

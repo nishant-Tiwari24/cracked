@@ -12,7 +12,7 @@ Recruiters spend seconds on a resume. Show the candidate exactly what those seco
 1. Call the Skill tool with "cracked-profile". Status, graduation year, country and targets decide the bar.
 2. **Company mode**: if the user names a company (or a job description), call the Skill tool with "company-intel" and judge against its resume screen. If there's a JD, also run the checks from `jd-match` §1–2 inline. No company named? Don't ask. Judge against the profile's target tier.
 3. Get the resume: the profile's `resume` path, a path the user gives, or pasted text.
-   - **PDF**: read it directly if your file tool supports PDFs, **and** extract the plain text the way an ATS would: `pdftotext -layout file.pdf -`, else `python3 -c "import pypdf…"` if installed, else `textutil -convert txt -stdout` (macOS). If extraction fails or comes out scrambled, that's ATS finding #1.
+   - **PDF**: read it directly if your file tool supports PDFs, **and** extract the plain text the way an ATS would: `pdftotext -layout file.pdf -`, else `python3 -c "import pypdf…"` if installed, else `textutil -convert txt -stdout` (macOS). If extraction fails or comes out scrambled, that's ATS finding #1. PDFs exported from Canva, Figma or heavily designed templates often extract badly (text as outlines, wrong reading order). `pdftotext` is the check, and say that's what you used.
    - **DOCX**: `textutil -convert txt -stdout file.docx` (macOS), `pandoc`, or unzip `word/document.xml`.
    - **LaTeX / Markdown / text**: read directly.
 4. Tone: **savage** by default. Switch to **gentle** only if they ask.
@@ -28,7 +28,7 @@ If you know the current market conditions for their target (e.g. a slow fresher 
 
 ## 2. Pass 1: ATS check and score
 
-Apply [RESUME-RULES.md](RESUME-RULES.md) § ATS and compute an **ATS score out of 100**, showing the breakdown so it's not a magic number:
+Apply [RESUME-RULES.md](RESUME-RULES.md) § ATS and compute a **heuristic ATS-readiness score out of 100**. Call it that: real ATS products don't publish a score, so this is cracked's checklist, not what any ATS will show. Show the breakdown so it's not a magic number:
 
 | Check | Points |
 |---|---|

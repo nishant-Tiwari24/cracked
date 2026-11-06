@@ -30,6 +30,24 @@ Fixtures live in [`_fixtures/`](_fixtures/): a deliberately weak resume, a backe
 
 **12/12 cases pass with cracked. Mean improvement over the bare model: +0.38.**
 
+### Added in v1.2–v1.3 (every skill now has at least one case)
+
+Run once each, with the plugin only (no baseline arm), on 2026-11-06:
+
+| Case | What it checks | Score |
+|---|---|---|
+| `mock-interview-differential` | A greedy coin-change submission is caught by random testing against a brute force, without giving away the fix | 1.00 |
+| `hr-round-no-invented-outcomes` | STAR feedback; the rewrite uses placeholders, never invented results | 1.00 |
+| `system-design-requirements-first` | Opens like an interviewer (requirements first), no design dump | 1.00 |
+| `prep-plan-uses-real-date` | Runs the date command; the week count matches the deadline; writes `plan.md` | 1.00 |
+| `rejection-review-cites-repeats` | Finds edge cases as the repeating root cause in the journal, merging `edgecases` with `edge-cases` | 1.00 |
+| `make-it-hireable-plan-first` | Audits and plans before editing; flags the hardcoded secret first | 1.00 |
+| `github-glowup-offline-profile` | Leaked key first, pin plan, no invented project facts, asks before applying | 1.00 ×2 (an earlier failure led to the fact-check step) |
+| `setup-cracked-checks-toolchain` | Environment check includes the language toolchain and timeout fallback | 1.00 |
+| `company-intel-offline-honest` | Alias `Tata Consultancy Services` → `tcs`, or an honest archetype fallback when offline | 1.00 |
+
+Also re-run after changes: `mock-interview-start`, `oa-sim-generate`, `defend-project`, `offer-decode-india`, `referral-hiring-post`, all 1.00.
+
 Notes, for honesty:
 - Each case was run once per arm. LLM output varies, so re-run with `--runs 3` before trusting a single number.
 - Two cases (`defend-project`, `oa-sim-generate`) first failed because of grader bugs (judges were only shown the final message). After fixing the graders, and making defend-my-project open with a code-grounded question, both pass. These scores are from the re-run.

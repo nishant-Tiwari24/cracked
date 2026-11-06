@@ -11,7 +11,7 @@ A plan that ignores where the candidate actually is goes in the bin by week two.
 
 1. Call the Skill tool with "cracked-profile". You need: `deadline`, `hours_per_day`, `target_companies`, `target_roles`, `dsa_level`, `language`. Ask for any that are missing (in one round).
 2. For each company in `target_companies` (max 3), call the Skill tool with "company-intel". Use the briefs' DSA topic mix to weight the patterns, and their process to schedule company-specific mocks. No target companies? Plan for the target tier.
-3. Read `$CRACKED_DIR/journal.md`. Count sessions per skill, collect every `weak_spots` tag with its frequency and recency, and note score trends.
+3. Read `$CRACKED_DIR/journal.md`. **Normalise the tags first**: lowercase, hyphenate, map near-duplicates onto the canonical list in `cracked-profile` (`DP`, `dynamic-programming` and `dp` → `dp-1d` or `dp-2d` by context; `edgecases` → `edge-cases`). Then count sessions per skill, collect every `weak_spots` tag with its frequency and recency, count `pattern:` fields, and note score trends.
 4. Read `$CRACKED_DIR/plan.md` if it exists. If it does, this is a **review run**: go to §3 first.
 
 ## 1. Budget the time
