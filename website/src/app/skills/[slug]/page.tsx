@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { REPO, formatDate, getSkill, getSkills } from "@/lib/skills";
 import { Shell, monoLabel } from "@/components/shell";
 import { SkillTile } from "@/components/icons";
-import { AuthorRow, ContentWithToc, InstallBlock, MetaLine } from "@/components/page-parts";
+import { AuthorRow, ContentWithToc, InstallBlock, MetaLine, PageHeader } from "@/components/page-parts";
 
 export function generateStaticParams() {
   return getSkills().map((s) => ({ slug: s.name }));
@@ -54,23 +54,13 @@ export default async function SkillPage({ params }: PageProps<"/skills/[slug]">)
   return (
     <Shell current={skill.name}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="border-b border-line px-6 pb-16 pt-16 md:px-14">
-        <MetaLine
-          index={skill.index}
-          total={skill.total}
-          parts={["cracked skills", `${skill.minutes} min read`, `Updated ${formatDate(skill.updated)}`]}
-        />
-        <h1 className="mt-6 flex items-center gap-6 text-[clamp(2.2rem,1.4rem+2.6vw,3.6rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
-          <SkillTile name={skill.name} size={66} />
-          <span>The /{skill.name} Skill</span>
-        </h1>
-        <p className="mt-6 max-w-[60ch] text-[clamp(1.15rem,1rem+0.5vw,1.5rem)] text-fg-muted">{skill.tagline}.</p>
-        <AuthorRow
-          copyText={skill.raw}
-          shareTitle={`The /${skill.name} skill | cracked`}
-          next={next ? { href: `/skills/${next.name}/` } : undefined}
-        />
-      </header>
+      <PageHeader
+        meta={<MetaLine index={skill.index} total={skill.total} parts={[skill.group.title, `${skill.minutes} min read`, `Updated ${formatDate(skill.updated)}`]} />}
+        icon={<SkillTile name={skill.name} size={44} />}
+        title={`/${skill.name}`}
+        subtitle={`${skill.tagline}.`}
+        actions={<AuthorRow copyText={skill.raw} shareTitle={`The /${skill.name} skill | cracked`} next={next ? { href: `/skills/${next.name}/`, label: `/${next.name}` } : undefined} />}
+      />
 
       <InstallBlock
         command={command}
@@ -87,11 +77,11 @@ export default async function SkillPage({ params }: PageProps<"/skills/[slug]">)
         fits={
           groupNo && (
             <>
-              <p className={`${monoLabel} mb-4 text-[14px] text-body`}>Where this fits</p>
-              <p className={`${monoLabel} flex items-center gap-2 text-[14px] text-gold`}>
-                <span className="size-2 rounded-full bg-gold" /> {skill.group.title}
+              <p className={`${monoLabel} mb-2.5 text-faint`}>Where this fits</p>
+              <p className="flex items-center gap-2 text-[12.5px] font-medium text-foreground">
+                <span className="size-1.5 rounded-full bg-primary shadow-[0_0_8px_#c6ff3d]" /> {skill.group.title}
               </p>
-              <p className="mt-3 text-[15px] leading-relaxed text-fg-muted">{skill.group.blurb}</p>
+              <p className="mt-1.5 text-[12.5px] leading-relaxed text-fg-muted">{skill.group.blurb}</p>
             </>
           )
         }

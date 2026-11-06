@@ -1,6 +1,8 @@
+import { createElement } from "react";
+import { asset } from "@/lib/site";
 import {
   Brain, Building2, ClipboardCheck, FileSearch, FileText, Flame, FolderGit2, GitBranch,
-  Handshake, IdCard, Zap, LayoutTemplate, Map as MapIcon, MessagesSquare, Mic, Network, Rocket, Settings2, Swords, Timer, Wallet,
+  Handshake, IdCard, LayoutTemplate, Map as MapIcon, MessagesSquare, Mic, Network, Rocket, Settings2, Swords, Timer, Wallet,
   type LucideIcon,
 } from "lucide-react";
 
@@ -28,34 +30,32 @@ const ICONS: Record<string, LucideIcon> = {
 
 export const iconFor = (name: string) => ICONS[name] ?? GitBranch;
 
-/** The cracked mark in the site palette. */
-export function BrandMark({ size = 36 }: { size?: number }) {
-  return <SkillTileInner Icon={Zap} size={size} />;
+/** The cracked logo, unchanged: lime bolt on a dark rounded tile. */
+export function BrandMark({ size = 28 }: { size?: number }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={asset("/assets/icon.png")} alt="" width={size} height={size} style={{ borderRadius: size * 0.22 }} className="shrink-0 ring-1 ring-white/10" />
+  );
 }
 
-/** App-icon style tile: warm gold gradient with a dark glyph. */
-export function SkillTile({ name, size = 64 }: { name: string; size?: number }) {
-  return <SkillTileInner Icon={iconFor(name)} size={size} />;
-}
-
-function SkillTileInner({ Icon, size }: { Icon: LucideIcon; size: number }) {
+/** Skill icon in the logo's style: dark tile, lime glyph. */
+export function SkillTile({ name, size = 48 }: { name: string; size?: number }) {
   return (
     <span
       aria-hidden="true"
-      className="inline-grid shrink-0 place-items-center"
+      className="inline-grid shrink-0 place-items-center ring-1 ring-white/10"
       style={{
         width: size,
         height: size,
         borderRadius: size * 0.24,
-        background: "linear-gradient(145deg, #ffe08a 0%, #f5c451 38%, #e08a2c 100%)",
-        boxShadow: "inset 0 1px 0 #fff6, inset 0 -2px 6px #0003, 0 6px 18px -6px #f5c45155",
+        background: "linear-gradient(180deg, #1a1c1f 0%, #0c0c0e 100%)",
+        boxShadow: "inset 0 1px 0 #ffffff14, 0 8px 24px -10px #c6ff3d40",
       }}
     >
-      <Icon style={{ width: size * 0.5, height: size * 0.5 }} strokeWidth={2.4} color="#191510" />
+      {createElement(iconFor(name), { style: { width: size * 0.48, height: size * 0.48 }, strokeWidth: 2.2, color: "#c6ff3d" })}
     </span>
   );
 }
-
 
 export function GitHubMark({ className = "size-4" }: { className?: string }) {
   return (

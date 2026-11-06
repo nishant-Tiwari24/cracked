@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { createElement } from "react";
+import { ArrowRight } from "lucide-react";
 import { GROUPS, REPO, REPO_URL, formatDate, getSkills } from "@/lib/skills";
 import { Shell, monoLabel } from "@/components/shell";
 import { BrandMark, iconFor } from "@/components/icons";
-import { AuthorRow, ContentWithToc, InstallBlock, MetaLine, installAll } from "@/components/page-parts";
+import { AuthorRow, ContentWithToc, InstallBlock, MetaLine, PageHeader, installAll } from "@/components/page-parts";
 import { CompanySearch } from "@/components/company-search";
 
 const scorecard = `cracked · /mock-interview · 2026-11-06
@@ -57,17 +59,13 @@ export default function Home() {
   return (
     <Shell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="border-b border-line px-6 pb-16 pt-16 md:px-14">
-        <MetaLine parts={["cracked", `${skills.length} skills`, "MIT licensed", `Updated ${formatDate(updated)}`]} />
-        <h1 className="mt-6 flex items-center gap-6 text-[clamp(2.2rem,1.4rem+2.6vw,3.6rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
-          <BrandMark size={66} />
-          <span>Skills for Getting Hired</span>
-        </h1>
-        <p className="mt-6 max-w-[62ch] text-[clamp(1.15rem,1rem+0.5vw,1.5rem)] text-fg-muted">
-          Agent skills that turn your coding agent into an interviewer, a coach and a career team, for tech placements and coding interviews.
-        </p>
-        <AuthorRow copyText={installAll} shareTitle="cracked: skills for getting hired" next={{ href: "/skills/setup-cracked/", label: "Start here" }} />
-      </header>
+      <PageHeader
+        meta={<MetaLine parts={["v1.0.0", `${skills.length} skills`, "MIT", `Updated ${formatDate(updated)}`]} />}
+        icon={<BrandMark size={44} />}
+        title="Skills for getting hired"
+        subtitle="Agent skills that turn your coding agent into an interviewer, a coach and a career team, for tech placements and coding interviews."
+        actions={<AuthorRow copyText={installAll} shareTitle="cracked: skills for getting hired" next={{ href: "/skills/setup-cracked/", label: "Get started" }} />}
+      />
 
       <InstallBlock
         label="Install the skills"
@@ -80,10 +78,10 @@ export default function Home() {
         toc={toc}
         fits={
           <>
-            <p className={`${monoLabel} mb-4 text-[14px] text-body`}>Works with</p>
-            <ul className="space-y-2 text-[15px] text-fg-muted">
+            <p className={`${monoLabel} mb-2.5 text-faint`}>Works with</p>
+            <ul className="space-y-1.5 text-[12.5px] text-fg-muted">
               {["Claude Code", "Codex", "Cursor", "GitHub Copilot", "Gemini CLI", "OpenCode, Windsurf, Amp"].map((a) => (
-                <li key={a} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-gold" />{a}</li>
+                <li key={a} className="flex items-center gap-2"><span className="size-1 rounded-full bg-primary" />{a}</li>
               ))}
             </ul>
           </>
@@ -102,31 +100,26 @@ export default function Home() {
           <p>Type a command, or just describe what you want (&quot;roast my resume&quot;) and your agent picks the right skill.</p>
         </div>
 
-        <div className="mt-8 space-y-10">
+        <div className="mt-5 space-y-7">
           {GROUPS.map((g, gi) => (
             <section key={g.id} aria-labelledby={`g-${g.id}`}>
-              <div className="mb-3 flex items-baseline gap-3">
-                <span className={`${monoLabel} text-faint`}>{gi + 1}</span>
-                <h3 id={`g-${g.id}`} className="text-[20px] font-semibold tracking-[-0.01em]">{g.title}</h3>
+              <div className="mb-1 flex items-baseline gap-2">
+                <span className="font-mono text-[11px] text-faint">0{gi + 1}</span>
+                <h3 id={`g-${g.id}`} className="text-[15px] font-semibold tracking-[-0.015em]">{g.title}</h3>
               </div>
-              <p className="mb-4 text-[16px] text-fg-muted">{g.blurb}</p>
-              <ul className="overflow-hidden rounded-[9px] border border-line">
-                {g.skills.filter((n) => byName[n]).map((n, si) => {
+              <p className="mb-2.5 text-[13px] text-fg-muted">{g.blurb}</p>
+              <ul className="overflow-hidden rounded-lg border border-line bg-white/[0.015]">
+                {g.skills.filter((n) => byName[n]).map((n) => {
                   const s = byName[n];
-                  const Icon = iconFor(n);
                   return (
                     <li key={n} className="border-b border-line last:border-b-0">
-                      <Link href={`/skills/${n}/`} className="group flex items-center gap-4 px-4 py-3.5 transition hover:bg-hover">
-                        <span className="grid size-9 shrink-0 place-items-center rounded-[8px] border border-line-strong bg-card text-gold">
-                          <Icon className="size-[18px]" />
+                      <Link href={`/skills/${n}/`} className="group flex items-center gap-3 px-3 py-2.5 transition-colors hover:bg-white/[0.04]">
+                        <span className="grid size-7 shrink-0 place-items-center rounded-md bg-white/[0.04] text-primary ring-1 ring-white/10 transition group-hover:ring-accent-line">
+                          {createElement(iconFor(n), { className: "size-3.5" })}
                         </span>
-                        <span className="min-w-0 flex-1">
-                          <span className="flex items-center gap-2 font-mono text-[15px] text-foreground">
-                            <span className="text-faint">{gi + 1}.{si + 1}</span> /{n}
-                          </span>
-                          <span className="block truncate text-[15px] text-fg-muted">{s.tagline}</span>
-                        </span>
-                        <span className="hidden font-mono text-[12px] text-faint sm:inline">{s.minutes} min</span>
+                        <span className="w-[164px] shrink-0 truncate font-mono text-[12.5px] text-foreground">/{n}</span>
+                        <span className="min-w-0 flex-1 truncate text-[13px] text-fg-muted">{s.tagline}</span>
+                        <ArrowRight className="size-3.5 shrink-0 text-faint opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
                       </Link>
                     </li>
                   );
@@ -142,9 +135,9 @@ export default function Home() {
             Name a company anywhere (&quot;Flipkart OA&quot;, &quot;HR round for Amazon&quot;) and every skill adapts: its most frequently reported LeetCode questions, its rounds and OA format, its published values, its resume bar. Here is the live data, the same data <span className="chip">/mock-interview</span> and <span className="chip">/oa-sim</span> use.
           </p>
         </div>
-        <div className="mt-6"><CompanySearch /></div>
-        <p className="mt-4 text-[14px] text-fg-muted">
-          Data: <a className="text-gold hover:underline" href="https://github.com/liquidslr/leetcode-company-wise-problems">leetcode-company-wise-problems</a>, community-reported and labelled that way, never &quot;leaked&quot;.
+        <div className="mt-4"><CompanySearch /></div>
+        <p className="mt-2.5 text-[12px] text-fg-muted">
+          Data: <a className="text-primary hover:underline" href="https://github.com/liquidslr/leetcode-company-wise-problems">leetcode-company-wise-problems</a>, community-reported and labelled that way, never &quot;leaked&quot;.
         </p>
 
         <div className="prose-ah">
@@ -155,14 +148,14 @@ export default function Home() {
           <h2 id="tested">Tested like software</h2>
           <p>Twelve realistic requests, run with and without cracked on the same model. Graders check that code really ran, that OA files exist, and that no metric was invented. 12 of 12 pass with cracked.</p>
         </div>
-        <div className="mt-6 overflow-hidden rounded-[9px] border border-line">
-          <table className="w-full text-left text-[15px]">
-            <thead className="border-b border-line bg-card font-mono text-[13px] text-fg-muted">
-              <tr><th className="px-4 py-3 font-normal">Case</th><th className="px-4 py-3 font-normal">Without</th><th className="px-4 py-3 font-normal">With cracked</th></tr>
+        <div className="mt-4 overflow-hidden rounded-lg border border-line">
+          <table className="w-full text-left text-[13px]">
+            <thead className="border-b border-line bg-white/[0.02] font-mono text-[11px] uppercase tracking-[0.06em] text-faint">
+              <tr><th className="px-3.5 py-2 font-normal">Case</th><th className="px-3.5 py-2 font-normal">Without</th><th className="px-3.5 py-2 font-normal">With cracked</th></tr>
             </thead>
             <tbody className="divide-y divide-line">
               {evals.map(([c, w]) => (
-                <tr key={c}><td className="px-4 py-3 text-body">{c}</td><td className="px-4 py-3 font-mono text-fg-muted">{w}</td><td className="px-4 py-3 font-mono text-gold">1.00</td></tr>
+                <tr key={c}><td className="px-3.5 py-2 text-body">{c}</td><td className="px-3.5 py-2 font-mono text-faint">{w}</td><td className="px-3.5 py-2 font-mono text-primary">1.00</td></tr>
               ))}
             </tbody>
           </table>

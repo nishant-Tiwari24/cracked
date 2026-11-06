@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
-/* Design tokens: dark docs theme (Geist / Geist Mono, warm gold accent, hairline borders). */
+/* Design tokens: dark docs theme (Geist / Geist Mono, neon lime brand accent, hairline borders). */
 :root {
   --background: #0b0b0b;
   --foreground: #f4f3f1;
   --card: #100f0e;
   --popover: #0d0d0c;
-  --primary: #f5c451;
-  --primary-foreground: #191510;
-  --accent-fill: #f5c451;
-  --accent-fill-hover: #ffd873;
+  --primary: #c6ff3d;
+  --primary-foreground: #0c0c0e;
+  --accent-fill: #c6ff3d;
+  --accent-fill-hover: #d6ff70;
   --secondary: #ffffff12;
   --muted: #0d0d0c;
   --muted-foreground: #f4f3f199;
   --border: #ffffff14;
   --input: #ffffff1f;
-  --ring: #f5c45159;
+  --ring: #c6ff3d66;
   --radius: 9px;
 
   --fg-body: #f4f3f1b8;
@@ -29,9 +29,9 @@
   --mark-yes: #58da98;
   --mark-no: #fd736d;
   --hover: #ffffff12;
-  --accent-wash: #f5c45112;
-  --accent-panel: #1d1a11;
-  --accent-line: #f5c45159;
+  --accent-wash: #c6ff3d12;
+  --accent-panel: #161b0c;
+  --accent-line: #c6ff3d4d;
   --band: #0e0e0d;
   --frame: #050505;
 }
@@ -66,33 +66,34 @@
   --radius-ah: var(--radius);
 }
 
-html { color-scheme: dark; scroll-padding-top: 6rem; }
+html { color-scheme: dark; scroll-padding-top: 4.5rem; }
+body { letter-spacing: -0.006em; }
 body {
   background: var(--frame);
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
-::selection { background: #f5c45140; }
+::selection { background: #c6ff3d40; color: #fff; }
 :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; border-radius: 6px; }
 
 /* Inline code chips, as in the reference design */
 .chip {
   font-family: var(--font-mono);
-  font-size: 0.88em;
-  padding: 0.12em 0.4em;
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
   border: 1px solid var(--line-strong);
-  border-radius: 6px;
+  border-radius: 5px;
   background: #ffffff0a;
   color: var(--foreground);
 }
 
 /* Rendered SKILL.md content */
-.prose-ah { color: var(--fg-body); font-size: 1.0625rem; line-height: 1.75; }
-.prose-ah > * + * { margin-top: 1.1rem; }
-.prose-ah h2 { color: var(--foreground); font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; margin-top: 3.25rem; }
-.prose-ah h3 { color: var(--foreground); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; margin-top: 2.25rem; }
-.prose-ah h4 { color: var(--foreground); font-size: 1.05rem; font-weight: 600; margin-top: 1.75rem; }
+.prose-ah { color: var(--fg-body); font-size: 0.9375rem; line-height: 1.7; }
+.prose-ah > * + * { margin-top: 0.85rem; }
+.prose-ah h2 { color: var(--foreground); font-size: 1.375rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1.25; margin-top: 2.5rem; }
+.prose-ah h3 { color: var(--foreground); font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.015em; margin-top: 1.75rem; }
+.prose-ah h4 { color: var(--foreground); font-size: 0.9375rem; font-weight: 600; margin-top: 1.25rem; }
 .prose-ah h2 a, .prose-ah h3 a, .prose-ah h4 a { color: inherit; text-decoration: none; }
 .prose-ah strong { color: var(--foreground); font-weight: 600; }
 .prose-ah a { color: var(--accent-fill); text-decoration: none; }
@@ -100,18 +101,18 @@ body {
 .prose-ah ul, .prose-ah ol { padding-left: 1.4rem; }
 .prose-ah ul { list-style: disc; }
 .prose-ah ol { list-style: decimal; }
-.prose-ah li + li { margin-top: 0.4rem; }
+.prose-ah li + li { margin-top: 0.3rem; }
 .prose-ah li::marker { color: var(--fg-faint); }
 .prose-ah :not(pre) > code {
-  font-family: var(--font-mono); font-size: 0.86em; padding: 0.12em 0.4em;
-  border: 1px solid var(--line-strong); border-radius: 6px; background: #ffffff0a; color: var(--foreground);
+  font-family: var(--font-mono); font-size: 0.85em; padding: 0.1em 0.35em;
+  border: 1px solid var(--line-strong); border-radius: 5px; background: #ffffff0a; color: var(--foreground);
 }
 .prose-ah pre {
-  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.65; background: var(--card);
-  border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.15rem; overflow-x: auto; color: var(--foreground);
+  font-family: var(--font-mono); font-size: 0.8125rem; line-height: 1.6; background: var(--card);
+  border: 1px solid var(--line); border-radius: 8px; padding: 0.875rem 1rem; overflow-x: auto; color: var(--foreground);
 }
 .prose-ah blockquote { border-left: 2px solid var(--accent-line); padding-left: 1rem; color: var(--fg-muted); }
-.prose-ah table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
-.prose-ah th, .prose-ah td { border-bottom: 1px solid var(--line); padding: 0.6rem 0.75rem 0.6rem 0; text-align: left; vertical-align: top; }
+.prose-ah table { width: 100%; border-collapse: collapse; font-size: 0.875rem; display: block; overflow-x: auto; }
+.prose-ah th, .prose-ah td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.75rem 0.5rem 0; text-align: left; vertical-align: top; }
 .prose-ah th { color: var(--foreground); font-weight: 600; }
 .prose-ah hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
