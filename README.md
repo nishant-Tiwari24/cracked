@@ -10,11 +10,18 @@
 
 # Skills For Getting Hired
 
-[![Validate](https://github.com/nishant-Tiwari24/cracked/actions/workflows/validate.yml/badge.svg)](https://github.com/nishant-Tiwari24/cracked/actions/workflows/validate.yml)
+[![GitHub stars](https://img.shields.io/github/stars/nishant-Tiwari24/cracked?style=flat&color=c6ff3d&labelColor=0c0c0e&logo=github)](https://github.com/nishant-Tiwari24/cracked/stargazers)
 [![Release](https://img.shields.io/github/v/release/nishant-Tiwari24/cracked?color=c6ff3d&labelColor=0c0c0e)](https://github.com/nishant-Tiwari24/cracked/releases)
+[![Validate](https://github.com/nishant-Tiwari24/cracked/actions/workflows/validate.yml/badge.svg)](https://github.com/nishant-Tiwari24/cracked/actions/workflows/validate.yml)
+[![Skills](https://img.shields.io/badge/skills-19-c6ff3d?labelColor=0c0c0e)](#reference)
+[![Companies](https://img.shields.io/badge/companies-470%2B-c6ff3d?labelColor=0c0c0e)](./skills/core/company-intel/SKILL.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c6ff3d?labelColor=0c0c0e)](LICENSE)
 
-Agent skills that turn your coding agent into an interviewer, a coach and a career team, for tech placements and job interviews.
+Agent skills for tech placements and coding interviews. Straight from your terminal.
+
+**cracked** turns Claude Code, Codex, Cursor, GitHub Copilot or Gemini CLI into your **interviewer, coach and career team**: company-wise mock DSA interviews for Google, Amazon, Microsoft, Flipkart and 470+ more; timed online assessments graded against hidden test cases; system design and HR rounds; a brutal resume roast with an ATS score; and a prep plan built from your real weak spots.
+
+**Built for** final-year and pre-final-year CS students preparing for campus placements, new grads applying off-campus, and engineers switching jobs.
 
 Preparing for tech interviews is hard. Sheets, courses and grind lists try to help by handing you a list of 450 problems. But a list doesn't interview you, doesn't tell you *why* you'd be rejected, and has no idea which company you're walking into on Monday.
 
@@ -227,6 +234,18 @@ Everything lives in `~/.cracked/` on your machine (override it with `CRACKED_HOM
 ## Contributing
 
 New rubrics, question banks and country-specific `/offer-decode` references are especially welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Star History
+
+If cracked helped you prepare, a ⭐ helps the next person find it.
+
+<a href="https://star-history.com/#nishant-Tiwari24/cracked&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nishant-Tiwari24/cracked&type=Date&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nishant-Tiwari24/cracked&type=Date">
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=nishant-Tiwari24/cracked&type=Date" width="600">
+  </picture>
+</a>
 
 ## License
 
