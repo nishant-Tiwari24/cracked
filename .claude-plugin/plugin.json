@@ -29,6 +29,7 @@
     "./skills/interview/oa-sim",
     "./skills/interview/pattern-coach",
     "./skills/interview/core-viva",
-    "./skills/interview/system-design-mock"
+    "./skills/interview/system-design-mock",
+    "./skills/interview/hr-round"
   ]
 }
