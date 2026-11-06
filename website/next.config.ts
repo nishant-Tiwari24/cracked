@@ -8,7 +8,10 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath,
   images: { unoptimized: true },
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_SITE_URL: process.env.SITE_URL ?? "",
+  },
   turbopack: {
     rules: {
       "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" },
