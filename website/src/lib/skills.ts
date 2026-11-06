@@ -97,7 +97,13 @@ function render(markdown: string, skillRel: string) {
     renderer: {
       heading({ tokens, depth }: Tokens.Heading) {
         const text = this.parser.parseInline(tokens);
-        const plain = text.replace(/<[^>]+>/g, "");
+        const plain = text
+          .replace(/<[^>]+>/g, "")
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .replace(/&lt;/g, "<")
+          .replace(/&gt;/g, ">")
+          .replace(/&amp;/g, "&");
         let id = slugify(plain);
         const n = used.get(id) ?? 0;
         used.set(id, n + 1);
