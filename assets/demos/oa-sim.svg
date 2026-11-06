@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="492" viewBox="0 0 900 492" role="img" aria-label="cracked · /oa-sim · example session">
+<title>cracked · /oa-sim · example session</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,3.524%{width:0}4.405%,97%{width:71px}100%{width:0}}.w0{animation:k0 17.02s linear infinite}@keyframes k1{0%,6.167%{width:0}15.125%,97%{width:516px}100%{width:0}}.w1{animation:k1 17.02s linear infinite}@keyframes k2{0%,18.062%{opacity:0}18.943%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 17.02s ease-out infinite}@keyframes k3{0%,22.291%{opacity:0}23.172%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 17.02s ease-out infinite}@keyframes k4{0%,26.520%{opacity:0}27.401%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 17.02s ease-out infinite}@keyframes k5{0%,36.623%{width:0}37.504%,97%{width:71px}100%{width:0}}.w5{animation:k5 17.02s linear infinite}@keyframes k6{0%,41.028%{opacity:0}41.909%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 17.02s ease-out infinite}@keyframes k7{0%,46.432%{opacity:0}47.313%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 17.02s ease-out infinite}@keyframes k8{0%,48.899%{opacity:0}49.780%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 17.02s ease-out infinite}@keyframes k9{0%,53.128%{opacity:0}54.009%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 17.02s ease-out infinite}@keyframes k10{0%,57.357%{opacity:0}58.238%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 17.02s ease-out infinite}@keyframes k12{0%,63.465%{opacity:0}64.347%,97%{opacity:1}100%{opacity:0}}.l12{opacity:0;animation:k12 17.02s ease-out infinite}@keyframes k13{0%,64.170%{opacity:0}65.051%,97%{opacity:1}100%{opacity:0}}.l13{opacity:0;animation:k13 17.02s ease-out infinite}@keyframes k14{0%,64.875%{opacity:0}65.756%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 17.02s ease-out infinite}@keyframes k15{0%,65.580%{opacity:0}66.461%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 17.02s ease-out infinite}@keyframes k16{0%,66.285%{opacity:0}67.166%,97%{opacity:1}100%{opacity:0}}.l16{opacity:0;animation:k16 17.02s ease-out infinite}@keyframes k17{0%,66.990%{opacity:0}67.871%,97%{opacity:1}100%{opacity:0}}.l17{opacity:0;animation:k17 17.02s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}clipPath rect{width:900px}}
+</style>
+<rect width="900" height="492" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="899" height="491" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H899.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="450.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /oa-sim · example session</text>
+<clipPath id="c0"><rect class="w0" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="w1" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">OA simulation for Google, 2 coding questions, 70 minutes, C++</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">✓ Google brief loaded   ✓ 2 problems picked from reported questions</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#a7aba3">✓ hidden tests generated: 14 per problem, expected outputs from an executed reference</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Your test is in ~/.cracked/oa/2026-11-06-1910/  ·  deadline 20:20  ·  say submit when done</tspan></text>
+<clipPath id="c5"><rect class="w5" x="28" y="174" height="21" width="0"/></clipPath>
+<text x="28" y="189" clip-path="url(#c5)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">submit</tspan></text>
+<text class="l6" x="28" y="210"><tspan fill="#a7aba3">compiling q1.cpp q2.cpp … running hidden tests (2 s limit each)</tspan></text>
+<text class="l7" x="28" y="231"><tspan fill="#f4f3f1">  Q1  Interval Merge Scheduler      14/14 AC                      100</tspan></text>
+<text class="l8" x="28" y="252"><tspan fill="#f4f3f1">  Q2  Grid Paths With Obstacles      9/14  (3 WA, 2 TLE)            64</tspan></text>
+<text class="l9" x="28" y="273"><tspan fill="#ffc85c">  Q2: all TLE cases have n = 10^5. Your memo is keyed by a string; use a 2D array.</tspan></text>
+<text class="l10" x="28" y="294"><tspan fill="#ffc85c">  Q2: all WA cases start on an obstacle. Return 0 before the DP.</tspan></text>
+<text class="l12" x="28" y="336"><tspan fill="#c6ff3d" font-weight="700">Cutoff: Borderline  (82/100)                          time 63m of 70m</tspan></text>
+<text class="l13" x="28" y="357"><tspan fill="#f4f3f1">Correctness             </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#f4f3f1">Efficiency              </tspan><tspan fill="#c6ff3d">██████</tspan><tspan fill="#2a2d30">████</tspan><tspan fill="#f4f3f1">  6</tspan></text>
+<text class="l15" x="28" y="399"><tspan fill="#f4f3f1">Edge Cases              </tspan><tspan fill="#c6ff3d">██████</tspan><tspan fill="#2a2d30">████</tspan><tspan fill="#f4f3f1">  6</tspan></text>
+<text class="l16" x="28" y="420"><tspan fill="#f4f3f1">Time Management         </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l17" x="28" y="441"><tspan fill="#a7aba3">Fix next: check the largest constraint before coding. It told you O(n²) wouldn&#x27;t pass.</tspan></text>
+</svg>

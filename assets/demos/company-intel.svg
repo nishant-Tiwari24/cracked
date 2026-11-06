@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="429" viewBox="0 0 900 429" role="img" aria-label="cracked · /company-intel · real data">
+<title>cracked · /company-intel · real data</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,4.135%{width:0}5.169%,97%{width:71px}100%{width:0}}.w0{animation:k0 14.51s linear infinite}@keyframes k1{0%,7.236%{width:0}12.750%,97%{width:281px}100%{width:0}}.w1{animation:k1 14.51s linear infinite}@keyframes k2{0%,16.196%{opacity:0}17.229%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 14.51s ease-out infinite}@keyframes k3{0%,19.779%{opacity:0}20.813%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 14.51s ease-out infinite}@keyframes k4{0%,22.674%{opacity:0}23.708%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 14.51s ease-out infinite}@keyframes k5{0%,30.393%{opacity:0}31.427%,97%{opacity:1}100%{opacity:0}}.l5{opacity:0;animation:k5 14.51s ease-out infinite}@keyframes k6{0%,33.977%{opacity:0}35.010%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 14.51s ease-out infinite}@keyframes k7{0%,35.837%{opacity:0}36.871%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 14.51s ease-out infinite}@keyframes k8{0%,37.698%{opacity:0}38.732%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 14.51s ease-out infinite}@keyframes k9{0%,39.559%{opacity:0}40.593%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 14.51s ease-out infinite}@keyframes k10{0%,41.420%{opacity:0}42.453%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 14.51s ease-out infinite}@keyframes k11{0%,49.139%{opacity:0}50.172%,97%{opacity:1}100%{opacity:0}}.l11{opacity:0;animation:k11 14.51s ease-out infinite}@keyframes k13{0%,56.306%{opacity:0}57.340%,97%{opacity:1}100%{opacity:0}}.l13{opacity:0;animation:k13 14.51s ease-out infinite}@keyframes k14{0%,61.268%{opacity:0}62.302%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 14.51s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}clipPath rect{width:900px}}
+</style>
+<rect width="900" height="429" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="899" height="428" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H899.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="450.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /company-intel · real data</text>
+<clipPath id="c0"><rect class="w0" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="w1" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">what is Amazon asking right now?</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">$ questions.py topics Amazon --window 3m</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#f4f3f1">  Amazon · last 3 months · 443 questions · Medium 249 · Easy 128 · Hard 66</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#f4f3f1">  Top topics: Array 247 · String 99 · Hash Table 95 · Sorting 75</tspan></text>
+<text class="l5" x="28" y="189"><tspan fill="#a7aba3">$ questions.py get Amazon --window 30d --difficulty medium,hard --limit 5</tspan></text>
+<text class="l6" x="28" y="210"><tspan fill="#f4f3f1">   1  Medium  Maximum Coins From K Consecutive Bags            freq 100</tspan></text>
+<text class="l7" x="28" y="231"><tspan fill="#f4f3f1">   2  Medium  Longest Substring Without Repeating Characters   freq  90</tspan></text>
+<text class="l8" x="28" y="252"><tspan fill="#f4f3f1">   3  Hard    Trapping Rain Water                              freq  79</tspan></text>
+<text class="l9" x="28" y="273"><tspan fill="#f4f3f1">   4  Medium  Number of Islands                                freq  79</tspan></text>
+<text class="l10" x="28" y="294"><tspan fill="#f4f3f1">   5  Medium  Lowest Common Ancestor of a Binary Tree          freq  76</tspan></text>
+<text class="l11" x="28" y="315"><tspan fill="#a7aba3">  source: community-reported (leetcode-company-wise-problems), never &quot;leaked&quot;</tspan></text>
+<text class="l13" x="28" y="357"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Brief saved to ~/.cracked/companies/amazon.md. Every skill now uses it.</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#58da98">  try: mock interview for Amazon · /oa-sim Amazon · /hr-round Amazon</tspan></text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="534" viewBox="0 0 900 534" role="img" aria-label="cracked · /mock-interview · example session">
+<title>cracked · /mock-interview · example session</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,2.287%{width:0}2.859%,97%{width:71px}100%{width:0}}.w0{animation:k0 26.23s linear infinite}@keyframes k1{0%,4.003%{width:0}8.959%,97%{width:443px}100%{width:0}}.w1{animation:k1 26.23s linear infinite}@keyframes k2{0%,10.865%{opacity:0}11.437%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 26.23s ease-out infinite}@keyframes k3{0%,14.754%{opacity:0}15.326%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 26.23s ease-out infinite}@keyframes k4{0%,15.212%{opacity:0}15.783%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 26.23s ease-out infinite}@keyframes k5{0%,21.006%{width:0}28.822%,97%{width:686px}100%{width:0}}.w5{animation:k5 26.23s linear infinite}@keyframes k6{0%,30.728%{opacity:0}31.300%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 26.23s ease-out infinite}@keyframes k7{0%,36.523%{width:0}44.624%,97%{width:711px}100%{width:0}}.w7{animation:k7 26.23s linear infinite}@keyframes k8{0%,46.531%{opacity:0}47.103%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 26.23s ease-out infinite}@keyframes k9{0%,49.657%{width:0}55.471%,97%{width:516px}100%{width:0}}.w9{animation:k9 26.23s linear infinite}@keyframes k10{0%,58.140%{opacity:0}58.711%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 26.23s ease-out infinite}@keyframes k11{0%,62.028%{opacity:0}62.600%,97%{opacity:1}100%{opacity:0}}.l11{opacity:0;animation:k11 26.23s ease-out infinite}@keyframes k12{0%,65.154%{width:0}72.017%,97%{width:605px}100%{width:0}}.w12{animation:k12 26.23s linear infinite}@keyframes k14{0%,76.287%{opacity:0}76.859%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 26.23s ease-out infinite}@keyframes k15{0%,76.744%{opacity:0}77.316%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 26.23s ease-out infinite}@keyframes k16{0%,77.202%{opacity:0}77.774%,97%{opacity:1}100%{opacity:0}}.l16{opacity:0;animation:k16 26.23s ease-out infinite}@keyframes k17{0%,77.659%{opacity:0}78.231%,97%{opacity:1}100%{opacity:0}}.l17{opacity:0;animation:k17 26.23s ease-out infinite}@keyframes k18{0%,78.117%{opacity:0}78.689%,97%{opacity:1}100%{opacity:0}}.l18{opacity:0;animation:k18 26.23s ease-out infinite}@keyframes k19{0%,78.574%{opacity:0}79.146%,97%{opacity:1}100%{opacity:0}}.l19{opacity:0;animation:k19 26.23s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}clipPath rect{width:900px}}
+</style>
+<rect width="900" height="534" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="899" height="533" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H899.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="450.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /mock-interview · example session</text>
+<clipPath id="c0"><rect class="w0" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="w1" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">mock interview for Amazon, medium DP, Python, 45 min</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">✓ profile loaded   ✓ Amazon: reported questions, last 6 months   ⏱ clock started</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Minimum Coins. Given coin values and an amount, return the fewest coins that</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#6f736c">         </tspan><tspan fill="#f4f3f1">make the amount, or -1. Example: coins=[1,2,5], amount=11 → 3. What would you clarify?</tspan></text>
+<clipPath id="c5"><rect class="w5" x="28" y="174" height="21" width="0"/></clipPath>
+<text x="28" y="189" clip-path="url(#c5)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">Unlimited coins of each value? Can amount be 0? I&#x27;d go greedy: largest coin first.</tspan></text>
+<text class="l6" x="28" y="210"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Yes and yes. Before you code it, run greedy on coins=[1,3,4], amount=6.</tspan></text>
+<clipPath id="c7"><rect class="w7" x="28" y="216" height="21" width="0"/></clipPath>
+<text x="28" y="231" clip-path="url(#c7)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">4+1+1 = 3 coins... but 3+3 = 2. Greedy fails. So dp[a] = min(dp[a-c] + 1) over coins.</tspan></text>
+<text class="l8" x="28" y="252"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Good. Complexity?</tspan></text>
+<clipPath id="c9"><rect class="w9" x="28" y="258" height="21" width="0"/></clipPath>
+<text x="28" y="273" clip-path="url(#c9)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">O(amount × coins) time, O(amount) space. Coding it bottom-up.</tspan></text>
+<text class="l10" x="28" y="294"><tspan fill="#58da98">▶ 12 edge cases + 20,000 random inputs vs brute force: 0 mismatches</tspan></text>
+<text class="l11" x="28" y="315"><tspan fill="#6f736c">cracked  </tspan><tspan fill="#f4f3f1">Follow-up: count the number of ways instead of the fewest coins?</tspan></text>
+<clipPath id="c12"><rect class="w12" x="28" y="321" height="21" width="0"/></clipPath>
+<text x="28" y="336" clip-path="url(#c12)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">Loop coins outside, amounts inside, so each combination is counted once.</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#c6ff3d" font-weight="700">Verdict: Hire  (8/10)                               time 31m · hints 0</tspan></text>
+<text class="l15" x="28" y="399"><tspan fill="#f4f3f1">Problem Solving         </tspan><tspan fill="#c6ff3d">█████████</tspan><tspan fill="#2a2d30">█</tspan><tspan fill="#f4f3f1">  9</tspan></text>
+<text class="l16" x="28" y="420"><tspan fill="#f4f3f1">Correctness &amp; Testing   </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l17" x="28" y="441"><tspan fill="#f4f3f1">Communication           </tspan><tspan fill="#c6ff3d">████████</tspan><tspan fill="#2a2d30">██</tspan><tspan fill="#f4f3f1">  8</tspan></text>
+<text class="l18" x="28" y="462"><tspan fill="#f4f3f1">Complexity Analysis     </tspan><tspan fill="#c6ff3d">█████████</tspan><tspan fill="#2a2d30">█</tspan><tspan fill="#f4f3f1">  9</tspan></text>
+<text class="l19" x="28" y="483"><tspan fill="#a7aba3">Fix next: you proposed greedy without testing it. Try a counterexample first.</tspan></text>
+</svg>

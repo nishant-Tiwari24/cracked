@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" role="img" aria-label="cracked · /roast-my-resume · example on the eval test resume">
+<title>cracked · /roast-my-resume · example on the eval test resume</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:13.5px;white-space:pre}
+@keyframes k0{0%,3.523%{width:0}4.404%,97%{width:71px}100%{width:0}}.w0{animation:k0 17.03s linear infinite}@keyframes k1{0%,6.166%{width:0}17.910%,97%{width:670px}100%{width:0}}.w1{animation:k1 17.03s linear infinite}@keyframes k2{0%,20.846%{opacity:0}21.726%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 17.03s ease-out infinite}@keyframes k3{0%,27.422%{opacity:0}28.303%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 17.03s ease-out infinite}@keyframes k4{0%,28.127%{opacity:0}29.008%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 17.03s ease-out infinite}@keyframes k5{0%,34.703%{opacity:0}35.584%,97%{opacity:1}100%{opacity:0}}.l5{opacity:0;animation:k5 17.03s ease-out infinite}@keyframes k6{0%,36.583%{opacity:0}37.463%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 17.03s ease-out infinite}@keyframes k7{0%,37.287%{opacity:0}38.168%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 17.03s ease-out infinite}@keyframes k8{0%,45.625%{opacity:0}46.506%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 17.03s ease-out infinite}@keyframes k9{0%,47.504%{opacity:0}48.385%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 17.03s ease-out infinite}@keyframes k10{0%,55.255%{opacity:0}56.136%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 17.03s ease-out infinite}@keyframes k11{0%,57.134%{opacity:0}58.015%,97%{opacity:1}100%{opacity:0}}.l11{opacity:0;animation:k11 17.03s ease-out infinite}@keyframes k13{0%,65.590%{opacity:0}66.471%,97%{opacity:1}100%{opacity:0}}.l13{opacity:0;animation:k13 17.03s ease-out infinite}@keyframes k14{0%,66.295%{opacity:0}67.176%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 17.03s ease-out infinite}@keyframes k15{0%,66.999%{opacity:0}67.880%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 17.03s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}clipPath rect{width:900px}}
+</style>
+<rect width="900" height="450" rx="14" fill="#0b0b0b"/>
+<rect x="0.5" y="0.5" width="899" height="449" rx="13.5" fill="none" stroke="#ffffff1f"/>
+<path d="M0.5 44.5H899.5" stroke="#ffffff14"/>
+<circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
+<text x="450.0" y="27" text-anchor="middle" fill="#6f736c" style="font-size:12px">cracked · /roast-my-resume · example on the eval test resume</text>
+<clipPath id="c0"><rect class="w0" x="28" y="69" height="21" width="0"/></clipPath>
+<text x="28" y="84" clip-path="url(#c0)"><tspan fill="#c6ff3d">$ </tspan><tspan fill="#f4f3f1">claude</tspan></text>
+<clipPath id="c1"><rect class="w1" x="28" y="90" height="21" width="0"/></clipPath>
+<text x="28" y="105" clip-path="url(#c1)"><tspan fill="#c6ff3d">› </tspan><tspan fill="#c6ff3d">roast my resume ~/Downloads/resume.pdf, I&#x27;m targeting SDE-1 at product companies</tspan></text>
+<text class="l2" x="28" y="126"><tspan fill="#a7aba3">Judging as: 2026 CS grad · India · product companies · against top 20% of applicants</tspan></text>
+<text class="l3" x="28" y="147"><tspan fill="#c6ff3d" font-weight="700">ATS score: 68/100</tspan></text>
+<text class="l4" x="28" y="168"><tspan fill="#f4f3f1">  parses 25/25 · headings 15/15 · contact 8/10 · dates 10/10 · format 5/15 · keywords 5/25</tspan></text>
+<text class="l5" x="28" y="189"><tspan fill="#fd736d">  &quot;Responsible for backend of e-commerce website&quot;</tspan></text>
+<text class="l6" x="28" y="210"><tspan fill="#6f736c"></tspan><tspan fill="#f4f3f1">  → Responsible for what? Say what you built and what changed because of it.</tspan></text>
+<text class="l7" x="28" y="231"><tspan fill="#58da98">  → Built order and payment APIs in Node.js + MongoDB with Razorpay, handling [N] orders/day</tspan></text>
+<text class="l8" x="28" y="252"><tspan fill="#fd736d">  &quot;Made a Netflix clone using React&quot;</tspan></text>
+<text class="l9" x="28" y="273"><tspan fill="#6f736c"></tspan><tspan fill="#f4f3f1">  → Every second resume has this. Cut it, or say what you added that Netflix didn&#x27;t.</tspan></text>
+<text class="l10" x="28" y="294"><tspan fill="#fd736d">  Skills: C, C++, Java, Python, JS … MS Office, Teamwork</tspan></text>
+<text class="l11" x="28" y="315"><tspan fill="#6f736c"></tspan><tspan fill="#f4f3f1">  → 20 skills, zero proof. Keep the 6 you can defend in an interview.</tspan></text>
+<text class="l13" x="28" y="357"><tspan fill="#c6ff3d" font-weight="700">Verdict: Borderline for SDE-1                               0 metrics invented</tspan></text>
+<text class="l14" x="28" y="378"><tspan fill="#f4f3f1">  1. add numbers to ShopKart   2. cut the clones   3. lead with LeetCode 250+</tspan></text>
+<text class="l15" x="28" y="399"><tspan fill="#a7aba3">  Placeholders like [N] need your real numbers. I&#x27;ll ask for each one.</tspan></text>
+</svg>
