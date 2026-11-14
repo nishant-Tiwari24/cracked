@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.3.2] - 2026-11-14
+
+### Changed
+
+- `github-glowup`: every glow-up now produces the house layout: a neofetch portrait block, then an aligned `├──` tree of every hackathon win or achievement, and nothing else (no projects, stats sections, widgets or tables). Documented in README-STYLES.md with a template.
+- `github-glowup`: `examples/neofetch-nishant-Tiwari24.md` now holds the full house-layout README.
+
 ## [1.3.1] - 2026-11-14
 
 ### Changed

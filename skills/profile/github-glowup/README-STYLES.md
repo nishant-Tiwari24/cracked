@@ -4,6 +4,39 @@ Default to **Style E (neofetch portrait)**. Use one of A–D only when the candi
 
 Before choosing, check the [`examples/`](examples/) folder next to this file: curated real-world READMEs live there as references. Match their quality bar. Never copy someone else's README wholesale; adapt the structure.
 
+## The house layout (default for every glow-up)
+
+Every `github-glowup` README uses this layout unless the user asks for something else. Two code blocks, in this order, nothing else on the page:
+
+````markdown
+```yaml
+<braille portrait, padded with U+2800 rows>  │ <handle>@github ──────────────────────────────
+<portrait row>                               │ . OS: ................................ <os>
+<portrait row>                               │ . Uptime: ...... <account age, from gh api>
+<portrait row>                               │ . Host: ................ <company / project>
+<portrait row>                               │ . Kernel: ............................ <role>
+<portrait row>                               │ . Languages.Programming: ........ <top 5>
+<portrait row>                               │ . Hackathons: ........... <N wins (tracks)>
+<portrait row>                               │ - Contact ────────────────────────────────
+<portrait row>                               │ . <site>: ........................ <link>
+<portrait row>                               │ - GitHub Stats ───────────────────────────
+<portrait row>                               │ . Repos: <n> · Stars: <n> · Followers: <n>
+```
+
+```
+~/hackathons  (<N> wins)
+├── <event>                     <track>  <result> · <prize>
+├── <event>                     <track>  <result> · <prize>
+└── <event>                     <track>  <result> · <prize>
+```
+````
+
+- The portrait is Style E below. No photo → a figlet banner of their name in the left column.
+- The tree lists **every** win or achievement they have, one line each, columns aligned (pad names so a space always separates the columns). Rename the heading to `~/achievements` if most entries aren't hackathons.
+- No projects section, no LeetCode or stat sections, no widgets, badges, tables or link lists: the pinned repos carry the projects.
+- Every value is real (their profile, repos, existing README, or what they told you). Lines ≤ 90 columns.
+- When the user removes or adds a section, keep the portrait rows intact: change only the right column, and move remaining facts up rather than deleting portrait rows.
+
 ## Style A: ASCII terminal (developer-core)
 
 Best for backend, systems and infra people. The ASCII banner is the hero.
