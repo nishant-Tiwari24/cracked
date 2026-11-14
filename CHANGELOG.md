@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.3.1] - 2026-11-14
+
+### Changed
+
+- `github-glowup`: the neofetch portrait (Style E, like dave1725) is now the default profile README style. The skill frames the head before converting a photo, gathers real stats with `gh api`, and pads and aligns the two columns.
+
+### Added
+
+- `github-glowup`: `examples/neofetch-nishant-Tiwari24.md`, a second Style E reference.
+
 ## [1.3.0] - 2026-11-06
 
 ### Changed
